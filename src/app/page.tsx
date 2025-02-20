@@ -8,7 +8,7 @@ import Location1 from "@/components/Home/Location/Location1";
 import HeroHealthcare from "@/components/Home/HeroHealth/HeroHealthcare";
 import Location3 from "@/components/Home/Location/Location3";
 import Testimonials from "@/components/Home/Testimonials/Testimonials"; 
-
+import Carousel from "@/components/Home/Carousel";
 
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
 {/* <Location/> */}
 {/* <Location1/> */}
 {/* <Location3/> */}
-<Marquee/>
+<Carousel/>
 
    </>
   );
