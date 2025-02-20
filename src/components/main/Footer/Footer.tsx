@@ -17,6 +17,7 @@ const Footer: React.FC = () => {
   };
 
   return (
+   <>
     <footer className="footer pt-11">
       <div className="footer-container">
         {/* Left Section */}
@@ -39,7 +40,7 @@ const Footer: React.FC = () => {
             If you want help for your family{" "}
             <Link
               href="/contact"
-              className="text-blue-500 underline underline-offset-4 ml-3"
+              className="text-white contrast-150 underline underline-offset-4 ml-3"
             >
               Contact Us.
             </Link>
@@ -48,7 +49,7 @@ const Footer: React.FC = () => {
             If you want to join our team{" "}
             <Link
               href="/join-our-team"
-              className="text-blue-500 underline underline-offset-4 ml-3"
+              className="text-white contrast-150 underline underline-offset-4 ml-3"
             >
               Click Here.
             </Link>
@@ -70,16 +71,16 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Right Section */}
-        <div className="footer-right pt-28 pl-11">
+        <div className="footer-right pt-28 pl-11 md:pl-80">
           <h3 className="text-2xl font-bold mb-1">Explore</h3>
-          <div className="border-t w- border-gray-300 w-[100px] mb-5" />
+          {/* <d/iv className="border-t w- border-gray-300 pt-4 w-[100px] mb-5" /> */}
           {/* First group: 4 links */}
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col gap-2 pt-9 pl- gap-5">
             <li>
               <Link href="/">► Home</Link>
             </li>
             <li>
-              <Link href="/about">► About Us</Link>
+              <Link href="/about-us">► About Us</Link>
             </li>
             <li>
               <Link href="/services">► Services</Link>
@@ -89,42 +90,38 @@ const Footer: React.FC = () => {
             </li>
           </ul>
           {/* Second group: 3 links on a new line, aligned to the right */}
-          <ul className="flex flex-col gap-2  mt-4">
-            <li>
-              <Link
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setShowPrivacyModal(true);
-                }}
-              >
-                ► Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact">► Contact Us</Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setShowTermsModal(true);
-                }}
-              >
-                ► Terms &amp; Conditions
-              </Link>
-            </li>
-          </ul>
-          <div className="cta-container mt-8">
+          {/* <div className="cta-container mt-8">
             <Link href="/" className="cta-btn">
-              Contact Us Now!
+            Contact Us Now!
             </Link>
-          </div>
+            </div> */}
         </div>
+            <ul className="flex flex-col gap-2 pr-7 md:pt-48 mt-4 gap-5">
+  
+              <li>
+                <Link
+                  href="/legal-notice"
+                 
+                >
+                  ► Legal Notice
+                </Link>
+              </li>
+             
+              <li>
+                <Link
+                  href="/privacy-policy"
+                 
+                >
+                  ► Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact">► Contact Us</Link>
+              </li>
+            </ul>
       </div>
 
-      <div className="footer-bottom">
+      <div className=" sm:pl-11">
         <p>&copy; 2025 Tech Craft, All Rights Reserved</p>
       </div>
 
@@ -155,9 +152,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
       )}
-
-      {/* Terms & Conditions Modal */}
-      {showTermsModal && (
+<div className="sm:pl-11">
+{showTermsModal && (
         <div className="modal" onClick={handleModalClose}>
           <div className="modal-content">
             <span className="close" onClick={() => setShowTermsModal(false)}>
@@ -168,7 +164,31 @@ const Footer: React.FC = () => {
           </div>
         </div>
       )}
+</div>
+      {/* Terms & Conditions Modal */}
+
+      <ul className="flex flex-col gap-2 sm:pl-[400px] md:pl-[700px] lg:pl-[1000px]  mt-4 gap-5">
+  <li>
+    <Link
+      href="#"
+      onClick={(e) => {
+        e.preventDefault();
+        setShowTermsModal(true);
+      }}
+    >
+      ► Terms &amp; Conditions
+    </Link>
+    {" | "}
+    <Link
+      href="/privacy-policy"
+     
+    >
+      ► Privacy Policy
+    </Link>
+  </li>
+  </ul>
     </footer>
+   </>
   );
 };
 

@@ -77,26 +77,3 @@
   }
 }
 /* right widht */
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px; /* Default width */
-}
-
-/* Track (the background of the scrollbar) */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
-
-/* Handle (the draggable part) */
-::-webkit-scrollbar-thumb {
-  background: blue;
-  border-radius: 9px;
-  transition: width 0.3s ease-in-out;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  width: 12px; /* Increase width on hover */
-  background: darkblue; /* Slightly darker blue */
-}

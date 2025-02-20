@@ -1,110 +1,99 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-
-const positions = [
-  {
-    title: "Behavior Consultant (BC)",
-    image: "/images/hiring2.jpg",
-    para:"The Behavior Consultant (BC) provides comprehensive behavioral health services, working closely with clients to assess needs and develop individualized treatment plans.  ",
-    description:"The Behavior Consultant (BC) provides comprehensive behavioral health services, working closely with clients to assess needs and develop individualized treatment plans.  ",
-    responsibilities: `- Conduct comprehensive multi-systemic assessments.  
-- Develop and implement individualized treatment plans.  
-- Provide individual, group, and family therapy sessions.  
-- Ensure BHT team is effectively implementing treatment plans`,
-  },
-  {
-    title: "Mobile Therapist (MT)",
-    image: "/images/hiring3.jpg",
-    para:"The Mobile Therapist (MT) provides Intensive Behavioral Health Services (IBHS) to children, youth, and young adults in their homes, schools, or communities. As part of a collaborative team with Behavior Consultants (BCs) and Behavioral Health Technicians (BHTs), the MT develops and implements individualized treatment plans.   ",
-    description:"The Mobile Therapist (MT) provides Intensive Behavioral Health Services (IBHS) to children, youth, and young adults in their homes, schools, or communities. As part of a collaborative team with Behavior Consultants (BCs) and Behavioral Health Technicians (BHTs), the MT develops and implements individualized treatment plans.  ",
-    responsibilities: `- Conduct comprehensive assessments and develop treatment plans. `,
-  },
-  {
-    title: "Behavioral Health Technician ",
-    image: "/images/hiring4.jpg",
-    para:"The Behavioral Health Technician (BHT) implements behavioral health services under the close supervision of a Behavior Consultant (BC). The BHT works one-on-one or in group settings with clients aged 5-21, their families, and other involved professionals.  ",
-    description:"The Behavioral Health Technician (BHT) implements behavioral health services under the close supervision of a Behavior Consultant (BC). The BHT works one-on-one or in group settings with clients aged 5-21, their families, and other involved professionals.  .",
-    responsibilities: `- Implement evidence-based strategies from the treatment plan.  
-- Keep the child engaged and motivated.  
-- Create a therapeutic environment`,
-
-  },
-];
 
 const Hiring: React.FC = () => {
   return (
-    <section className="py-16 px-4 bg-white">
-      {/* Main Heading & Intro Paragraph */}
-      <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-5xl font-extrabold text-blue-600 mb-4">We are Hiring</h1>
-        <p className="text-lg text-gray-700 mb-12 ">
-          Join our dynamic team and help us make a difference in behavioral health.
-          Explore our open positions below and apply today!
-        </p>
-      </div>
-
-      {/* Positions Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3  gap-8">
-        {positions.map((position, index) => (
-          <div
-            key={index}
-            className="bg-blue-100 rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105"
-          >
-            {/* Position Image */}
-            <div className="relative h-48">
-              <Image
-                src={position.image}
-                alt={position.title}
-                fill
-                className="object-cover"
-              />
-            </div>
-            {/* Position Details */}
-            <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2">{position.title}</h2>
-              <p className="text-gray-700 mb-4 line-clamp-3 ">{position.para}</p>
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button variant="outline" className="mt-4 bg-blue-500 text-white">
-                    See Full Details
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px] md:max-w-[600px]">
-                  <DialogHeader>
-                    <DialogTitle>{position.title}</DialogTitle>
-                    <DialogDescription>
-                      <p className="mt-4 text-base text-black/90 font-semibold">Job Description:</p>
-                      <p className="text-sm text-gray-600 whitespace-pre-line">
-                        {position.description}
-                      </p>
-                    </DialogDescription>
-                    <DialogDescription>
-                      <p className="mt-4 text-base text-black/90 font-semibold">Key Responsibilities:</p>
-                      <p className="text-sm text-gray-600 whitespace-pre-line">
-                        {position.responsibilities}
-                      </p>
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="mt-6 flex justify-end">
-                    <Button variant="default">Apply to this position</Button>
-                  </div>
-                </DialogContent>
-              </Dialog>
-            </div>
+    <div className="hiring-section p-8 text-center">
+      <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
+        {/* Job 1 */}
+        <div className="job w-full md:w-[650px] p-4  flex flex-col">
+          <Image
+            src="/images/j11.jpg"
+            alt="Behavior Consultant (BC)"
+            width={600}
+            height={400}
+            className="w-full object-contain rounded"
+          />
+          <h2 className="mt-4 text-2xl text-blue-500 font-bold">
+            Behavior Consultant (BC)
+          </h2>
+          <h3 className="mt-2 text-lg text-gray-700 font-semibold">Job Description</h3>
+          <p className="mt-1 text-gray-600">
+            The Behavior Consultant (BC) provides comprehensive behavioral
+            health services, working closely with clients to assess needs and
+            develop individualized treatment plans. Supervision provided at no
+            cost.
+          </p>
+          <h4 className="mt-3 text-lg text-gray-700 font-semibold">
+            Key Responsibilities
+          </h4>
+          <div className="mt-1 list-disc list-inside text-gray-600">
+            <p>Conduct comprehensive multi-systemic assessments.</p>
+            <p>Develop and implement individualized treatment plans.</p>
+            <p>
+                Provide individual, group, and family therapy sessions.
+            </p>
+            <p>
+              Ensure BHT team is effectively implementing treatment plans.
+            </p>
           </div>
-        ))}
+        </div>
+
+        {/* Job 2 */}
+        <div className="job w-full md:w-[600px] p-4 flex flex-col">
+          <Image
+            src="/images/j2.jpg"
+            alt="Mobile Therapist (MT)"
+            width={600}
+            height={400}
+            className="w-full object-cover rounded"
+          />
+          <h2 className="mt-4 text-2xl text-blue-500 font-bold  pt-4">Mobile Therapist (MT)</h2>
+          <h3 className="mt-2 text-lg text-gray-700 font-semibold">Job Description</h3>
+          <p className="mt-1 text-gray-600">
+          The Mobile Therapist (MT) provides Intensive Behavioral Health Services (IBHS) to children, youth, and young adults in their homes, schools, or communities. As part of a collaborative team with Behavior Consultants (BCs) and Behavioral Health Technicians (BHTs), the MT develops and implements individualized treatment plans. 
+
+          </p>
+          <h4 className="mt-3 text-lg text-gray-700 font-semibold">Responsibilities</h4>
+          <p className="mt-1 text-gray-600">
+          Conduct comprehensive assessments and develop treatment plans.  
+
+          </p>
+        </div>
+
+        {/* Job 3 */}
+        <div className="job w-full md:w-[650px] p-4  flex flex-col">
+          <Image
+            src="/images/j3.jpg"
+            alt="UX Designer"
+            width={600}
+            height={400}
+            className="w-full object-cover rounded"
+          />
+          <h2 className="mt-4 text-2xl text-blue-500 font-bold">Behavioral Health Technician (BHT)
+          </h2>
+          <h3 className="mt-2 text-lg text-gray-700 font-semibold">Job Description</h3>
+          <p className="mt-1 text-gray-600">
+          The Behavioral Health Technician (BHT) implements behavioral health services under the close supervision of a Behavior Consultant (BC). The BHT works one-on-one or in group settings with clients aged 5-21, their families, and other involved professionals. Paid training provided to employees. 
+
+          </p>
+          <h4 className="mt-3 text-lg text-gray-700   font-semibold">Responsibilities</h4>
+          <p className="mt-1 text-gray-600">
+          Implement evidence-based strategies from the treatment plan. 
+
+          </p> <p className="mt-1 text-gray-600">
+          Keep the child engaged and motivated. 
+
+
+          </p> <p className="mt-1 text-gray-600">
+          Create a therapeutic environment. 
+           
+
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
