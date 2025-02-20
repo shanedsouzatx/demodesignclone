@@ -41,8 +41,8 @@ export default function Benefits() {
     <Link href="/privacy-policy" className="underline hober hover:text-gray-600">We will protect your information. Link to Privacy Policy. </Link>
 </p>
 
-<h1 className="text-gray-700 text-md  font-bold pt-11">Employment Portal</h1>
-<p className="text-gray-600 mt-2">Here we are envisioning a portal for potential employees.   Initially they upload their resume. After initial approval we can then invite them securely to upload the dozen or so documents needed for a complete HR file. </p>
+{/* <h1 className="text-gray-700 text-md  font-bold pt-11">Employment Portal</h1>
+<p className="text-gray-600 mt-2">Here we are envisioning a portal for potential employees.   Initially they upload their resume. After initial approval we can then invite them securely to upload the dozen or so documents needed for a complete HR file. </p> */}
    </div>
    {/* Right: Heading and Paragraph */}
    <div className="md:w-1/2 w-full text-left mt-8 md:mt-0 md:pl-8">
