@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
         <ul className="list-disc list-inside text-lg text-gray-600">
           <li>	Philadelphia</li>
           <li>
-            <Link href="/schools" className="text-blue-500 underline underline-offset-4 hover:text-blue-600">	A cluster of South Philadelphia Schools </Link>
+           	A cluster of South Philadelphia Schools
           </li>
           <li>	Bucks, Montgomery, and Delaware Counties</li>
         </ul>
@@ -48,8 +48,8 @@ const Hero: React.FC = () => {
           <li>Early Intervention Services: Specialized care for children from birth to age 5.
           </li>
         </ul>
-        <span className="text-blue-500 underline underline-offset-4 hover:text-blue-600">
-          Learn more about our services</span>
+        <Link href="services" className="text-blue-500 underline underline-offset-4 hover:text-blue-600">
+          Learn more about our services</Link>
         {/*  */}
         <h2 className="text-3xl font-semibold">What is Applied Behavior Analysis (ABA)?
         </h2>

@@ -196,9 +196,8 @@ export default function Hero() {
    </div>
  </div>
  {/* 4th */}
- <div className="flex flex-col md:flex-row items-center justify-between py-12 px-4">
+ {/* <div className="flex flex-col md:flex-row items-center justify-between py-12 px-4">
 
-{/* Left: Image */}
 <div className="md:w-1/2 w-full max-w-[700px] mx-auto">
 <h2 className="text-xl md:text-2xl font-bold text-blue-500    ">Local Insurance Information
 
@@ -223,18 +222,17 @@ export default function Hero() {
 
   </p>
 </div>
-{/* Right: Heading and Paragraph */}
 <div className="md:w-1/2 w-full text-left mt-8 md:mt-0 m">
  
   <Image
-     src="/images/ser6.jpg" // Replace with your image path
+     src="/images/ser6.jpg"
      alt="Hero Image"
      width={500}
      height={500}
      className="object-cover rounded p-16"
      />
 </div>
-</div>
+</div> */}
           </>
   );
 }

@@ -11,10 +11,18 @@ const Contact: React.FC = () => {
     phone: "",
     message: "",
     consent: false,
+    location: "", // for radio button selection
+    // files will be added in the future if needed
   });
 
+  const locations = [
+    { name: "Bala Cynwyd Office", email: "location1@example.com" },
+    { name: "Philadelphia Office", email: "location2@example.com" },
+    { name: "South Philadelphia Satellite Office", email: "location3@example.com" },
+  ];
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const target = e.target as HTMLInputElement;
+    const target = e.target as HTMLInputElement;  // Type assertion
     const { name, value, type, checked } = target;
     setFormData({
       ...formData,
@@ -22,10 +30,32 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // (Optional) Handle file input changes if you add file support later
+  // const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   setFormData({
+  //     ...formData,
+  //     files: e.target.files,
+  //   });
+  // };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
-    // Handle form submission logic here (e.g., API call)
+    if (!formData.location) {
+      alert("Please select a location.");
+      return;
+    }
+
+    const res = await fetch("/api/send-emails", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      alert("Email sent successfully!");
+    } else {
+      alert("Error sending email.");
+    }
   };
 
   return (
@@ -33,26 +63,17 @@ const Contact: React.FC = () => {
       {/* Left Section - Contact Info */}
       <div className="text-b0">
         <h2 className="text-2xl text-blue-500 md:text-4xl font-bold">Get in touch</h2>
-        <hr className="border-blue-500 w-36  -space-x-9 h-[3px] mt-2 mb-4" />
+        <hr className="border-blue-500 w-36 h-[3px] mt-2 mb-4" />
         <div className="mt-4">
-  <div className="flex items-center">
-    <Image 
-      src="/images/con7.jpg" 
-      alt="Phone" 
-      width={104} 
-      height={104} 
-      className="w-11 h-11 contrast-100"
-    />
-    <div className="ml-4"> {/* Added margin-left to create space */}
-      <p className="font-semibold">Phone</p>
-      <p>610-664-6200</p>
-    </div>
-  {/* </div> */}
-
-
+          <div className="flex items-center">
+            <Image src="/images/con7.jpg" alt="Phone" width={104} height={104} className="w-11 h-11 contrast-100" />
+            <div className="ml-4">
+              <p className="font-semibold">Phone</p>
+              <p>610-664-6200</p>
+            </div>
           </div>
           <div className="flex items-center gap-3 mt-4">
-            <Image src="/images/con8.jpg" alt="Email" width={104} height={104}  className="-ml-3 w-16 h-16"/>
+            <Image src="/images/con8.jpg" alt="Email" width={104} height={104} className="-ml-3 w-16 h-16" />
             <div>
               <p className="font-semibold">Email</p>
               <p>BATPaa@gmail.com</p>
@@ -113,6 +134,27 @@ const Contact: React.FC = () => {
             className="border border-gray-400 px-3 py-2 w-full rounded h-28"
             required
           ></textarea>
+          
+          {/* (Optional) File upload input for future file support */}
+          {/* <input type="file" name="files" multiple onChange={handleFileChange} /> */}
+
+          {/* Location Selection */}
+          <div className="flex flex-col space-y-2">
+            <p className="text-sm font-semibold  md:text-lg">Select a location:</p>
+            {locations.map((loc, index) => (
+              <label key={index} className="flex items-center space-x-2">
+                <input
+                  type="radio"
+                  name="location"
+                  value={loc.name}
+                  onChange={handleChange}
+                  className="form-radio text-blue-600"
+                />
+                <span>{loc.name}</span>
+              </label>
+            ))}
+          </div>
+
           <div className="flex items-start gap-2">
             <input
               type="checkbox"
@@ -137,7 +179,7 @@ const Contact: React.FC = () => {
 
       {/* Right Section - Let's Talk */}
       <div>
-        <h2 className="text-2xl md:text-3xl text-blue-500 font-bold">Let's Talk!</h2>
+        <h2 className="text-2xl md:text-3xl text-blue-500 font-bold">Let&apos;s Talk!</h2>
         <hr className="border-blue-500 w-16 mt-2 mb-4" />
         <p className="text-gray-700">
           Have questions? Interested in working with us? Send us an{" "}

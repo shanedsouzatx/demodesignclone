@@ -41,6 +41,7 @@ const ImageCarousel: React.FC = () => {
         interval={3000}
         showStatus={false}
         centerMode
+        showIndicators={false}
         centerSlidePercentage={33.33}
         renderArrowPrev={(clickHandler, hasPrev) =>
           hasPrev && (
