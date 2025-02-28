@@ -1,9 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaInfoCircle } from "react-icons/fa";
 
 const Hero: React.FC = () => {
+  const [showTooltip, setShowTooltip] = useState(false);
+
   return (
     <section className="min-h-screen flex p-3 md:p-7">
       {/* Left Content: Scrollable text */}
@@ -27,11 +30,34 @@ const Hero: React.FC = () => {
           We work with children and young adults aged birth to 21 in:
         </p>
         <ul className="list-disc list-inside text-lg text-gray-600">
-          <li>	Philadelphia</li>
-          <li>
-           	A cluster of South Philadelphia Schools
+          <li>Philadelphia</li>
+          <li className="relative flex items-center gap-2">
+        <span className="font-bold text-md">• </span> &nbsp; A cluster of South Philadelphia Schools
+            <div 
+              className="relative inline-block"
+              onMouseEnter={() => setShowTooltip(true)}
+              onMouseLeave={() => setShowTooltip(false)}
+            >
+              <FaInfoCircle className="text-blue-500 cursor-help" />
+              {showTooltip && (
+                <div className="absolute z-10 w-72 p-4 bg-white rounded-lg shadow-lg border border-gray-200 left-2 bottom-6">
+                  <div className="text-sm text-gray-700">
+                    <ul className="list-disc list-inside">
+                      <li>Andrew Jackson School</li>
+                      <li>Fell School</li>
+                      <li>Francis Scott Key School</li>
+                      <li>George W. Nebinger School</li>
+                      <li>Southwark School</li>
+                      <li>Vare-Washington School</li>
+                      <li>William M. Meredith School</li>
+                    </ul>
+                  </div>
+                  <div className="absolute top-2 right-3 w-3 h-3 bg-white border-t border-l border-gray-200 transform rotate-45"></div>
+                </div>
+              )}
+            </div>
           </li>
-          <li>	Bucks, Montgomery, and Delaware Counties</li>
+          <li>Bucks, Montgomery, and Delaware Counties</li>
         </ul>
         {/*  */}
         <h2 className="text-3xl font-semibold">Our Services
@@ -63,15 +89,15 @@ const Hero: React.FC = () => {
 
         <ul className="list-disc list-inside text-lg text-gray-600">
           <li>
-            <span className="font-semibold">Assessment:</span> We start by understanding your child’s needs through interviews, assessments, and observation.<ul className="list-disc list-inside text-lg text-gray-600 "><li><span className="font-semibold">Plan:</span> A licensed Behavior Consultant creates a Functional Behavior Analysis with a detailed treatment plan.
+            <span className="font-semibold">Assessment:</span> We start by understanding your child&apos;s needs through interviews, assessments, and observation.<ul className="list-disc list-inside text-lg text-gray-600 "><li><span className="font-semibold">Plan:</span> A licensed Behavior Consultant creates a Functional Behavior Analysis with a detailed treatment plan.
             </li>
             </ul>
           </li>
           <li>
-            <span className="font-semibold">Team:</span> Your child’s care team may include a Behavior Consultant and/or a Mobile Therapist. There may also be a one-on-one trained specialist called a Behavior Health Technician.
+            <span className="font-semibold">Team:</span> Your child&apos;s care team may include a Behavior Consultant and/or a Mobile Therapist. There may also be a one-on-one trained specialist called a Behavior Health Technician.
           </li>
           <li>
-            <span className="font-semibold">Support:</span> We provide care in your child’s natural environment—home, school, or community—to ensure comfort and success.
+            <span className="font-semibold">Support:</span> We provide care in your child&apos;s natural environment—home, school, or community—to ensure comfort and success.
           </li>
         </ul>
 
@@ -82,11 +108,11 @@ const Hero: React.FC = () => {
         <p className="text-lg text-gray-600">
           Most individuals under 21 are eligible for our services at no cost to you through PA Medicaid.
           <br />
-          If you don’t have coverage yet, call us to learn more or to get authorization for services.
+          If you don&apos;t have coverage yet, call us to learn more or to get authorization for services.
 
 
         </p>
-        <p className="text-lg text-gray-600">At BATP, we’re here to help your child grow, learn, and thrive. Let’s take the first step together.
+        <p className="text-lg text-gray-600">At BATP, we are here to help your child grow, learn, and thrive. Let&apos;s take the first step together.
         </p>
         <p>Call  <span className="font-semibold">BATP</span>  <br />
           267-507-2719 – Philadelphia <br />
