@@ -18,8 +18,8 @@ const Footer: React.FC = () => {
 
   return (
    <>
-    <footer className="footer !mb-0 !pb-0 !bottom-0 !pt-6 ">
-      <div className="footer-container">
+    <footer className="footer  !mb-0 !pb-0 !bottom-0 !pt-6 ">
+      <div className="footer-container max-w-7xl mx-auto">
         {/* Left Section */}
         <div className="footer-left">
           <Image
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
               <Link href="/services">► Services</Link>
             </li>
             <li>
-              <Link href="/join-our-team">► Join Our Team</Link>
+              <Link href="/join-our-team" className="!w-full p-0 flex">► Join Our Team</Link>
             </li>
           </ul>
           {/* Second group: 3 links on a new line, aligned to the right */}
@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
             </Link>
             </div> */}
         </div>
-            <ul className="flex flex-col gap-2 pr-16 md:pt-48 mt-4 gap-5">
+            <ul className="flex flex-col gap-2 pr-11 md:pt-48 mt-4 gap-5">
   
               <li>
                 <Link
@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
             </ul>
       </div>
 
-      <div className=" sm:pl-11 md:pl-5 !pb-2  ">
+      <div className=" sm:pl-11 md:pl-5  max-w-7xl mx-auto !pb-2  ">
         <p>&copy;  2024 WEBSITE ALGORITHMS,  All Rights Reserved</p>
       </div>
 
