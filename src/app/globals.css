@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.nav{}
+
 *{
-  font-family:Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 @layer utilities {

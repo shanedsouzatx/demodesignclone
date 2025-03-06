@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <>
-  <h2 className="text-3xl text-center pt-[290px] md:text-5xl font-bold text-black">Our Services For You</h2>
+  <h2 className="text-3xl text-center pt-[240px] md:text-5xl font-bold text-black">Our Services For You</h2>
         <p className="text-gray-600 text-center mt-4">
           We offer a range of services to help children, teens, and young adults thrive.
         </p>
@@ -175,7 +175,7 @@ export default function Hero() {
 
      </h2>
      <p className="text-gray-600 mt-4">
-     Most of our services are fully covered for individuals under 21 through PA Medicaid.
+     All our services are fully covered for nearly every individual under 21 through PA Medicaid.
 
      </p>   <p className="text-gray-600 mt-2">
      Contact BATP directly for assistance. <br />

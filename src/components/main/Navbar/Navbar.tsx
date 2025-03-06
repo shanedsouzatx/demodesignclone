@@ -38,33 +38,33 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-50 w-full bg-white/90 backdrop-blur-md shadow-md border-b-4 border-blue-600 transition-opacity duration-300 ${
+      className={`nav fixed !font-[merriweather] top-0 z-50 w-full bg-white/90 backdrop-blur-md shadow-md border-b-4 border-blue-600 transition-opacity duration-300 ${
         showNavbar ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
-      <div className="flex flex-col md:flex-row items-center justify-between p-3 md:px-6 max-w-[1900px] mx-auto">
+      <div className="flex flex-col py-5 px-6 md:px-16 md:flex-row items-center justify-between px-2 max-w-[1900px] mx-auto">
         {/* Left - Logo and Text */}
-        <div className="flex flex-col items-center gap-2">
-          <Link href="/">
-            <Image
-              src="/images/logo2.png"
-              alt="Logo"
-              width={50}
-              height={50}
-              className="md:w-[85px] contrast-200 transition-transform duration-200"
-            />
-          </Link>
-          <Link
-            href="/"
-            className="font-bold text-xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700 drop-shadow-md"
-          >
-            <span>Behavior Analysis &amp;</span>
-            <span className="block">Therapy Partners</span>
-          </Link>
-        </div>
+        <div className="flex flex-col xl:flex-row items-center gap-2 xl:gap-">
+  <Link href="/">
+    <Image
+      src="/images/logo2.png"
+      alt="Logo"
+      width={120}
+      height={90}
+      className="md:w-[75px] contrast-200 transition-transform duration-200"
+    />
+  </Link>
+  <Link
+    href="/"
+    className="font-semibold !font-[Merriweather] text-xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700 text-center lg:text-left"
+  >
+    <span>Behavior Analysis &amp;</span> <br />
+    <span className="flex lg:inline">Therapy Partners</span>
+  </Link>
+</div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex flex-wrap text-base -space-x-3 ">
+        <div className="hidden md:flex flex-wrap text-base space-x-2 lg:-space-x-1 p">
           {navItems.map((item) => {
             const linkPath =
               item === "Home" ? "/" : `/${item.toLowerCase().replace(/ /g, "-")}`;
@@ -73,7 +73,7 @@ const Navbar = () => {
               <Link key={item} href={linkPath}>
                 <Button
                   variant="ghost"
-                  className={`relative group px-5 py-3 text-lg transition-colors duration-300 ${
+                  className={`relative group  py-3 text-lg md:text-xl lg:text-2xl transition-colors duration-300 ${
                     isActive
                       ? "bg-blue-600 hover:bg-blue-700"
                       : "hover:bg-blue-600 text-white"

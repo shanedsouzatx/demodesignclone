@@ -40,7 +40,7 @@ const Hero2: React.FC = () => {
         <p className="text-lg text-black">
         Gary Ames is a licensed clinical psychologist and co-founder of BATP. He is currently focused on special projects that aim to enhance the quality of work life within the organization.
 He recently presented a poster at the 50th Applied Behavior Analysis International Convention in 2024, showcasing a BATP-sponsored neurofeedback project in two South Philadelphia schools. For more information 
-<Link href="https://www.CalmFocus.com" className="text-blue-500 hover:text-blue-700">Click Here</Link>
+<Link href="/biofeedback-neurofeedback-eeg" className="text-blue-500 hover:text-blue-700">Click Here</Link>
 BATP does not offer Neurofeedback.
 Gary also runs a private practice specializing in neurofeedback.
 Learn more at:

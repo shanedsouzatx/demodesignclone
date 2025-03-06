@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
 
   return (
    <>
-    <footer className="footer pt-11">
+    <footer className="footer !mb-0 !pb-0 !bottom-0 !pt-6 ">
       <div className="footer-container">
         {/* Left Section */}
         <div className="footer-left">
@@ -29,7 +29,8 @@ const Footer: React.FC = () => {
             height={500}
             width={500}
           />
-          <p className="max-w-[550px]">
+          <div className="h-[2px] w-full bg-white mt-4 "/>
+          <p className="w-[450px] pt-11">
             Behavior Analysis &amp; Therapy Partners (BAPT) is devoted to
             providing behavioral health care to those under 21 years of age.
             Starting in 2006, we are now a large company with 3 offices serving
@@ -49,7 +50,7 @@ const Footer: React.FC = () => {
             If you want to join our team{" "}
             <Link
               href="/join-our-team"
-              className="text-white contrast-150 underline underline-offset-4 ml-3"
+              className="text-white contrast-150 underline underline-offset-8  ml-3"
             >
               Click Here.
             </Link>
@@ -71,8 +72,8 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Right Section */}
-        <div className="footer-right pt-28 pl-11 md:pl-80">
-          <h3 className="text-2xl font-bold mb-1">Explore</h3>
+        <div className="footer-right pt-28 pl-11 md:pl-[450px]">
+          <h3 className="text-2xl font-bold mb-1 underline underline-offset-4">Explore</h3>
           {/* <d/iv className="border-t w- border-gray-300 pt-4 w-[100px] mb-5" /> */}
           {/* First group: 4 links */}
           <ul className="flex flex-col gap-2 pt-9 pl- gap-5">
@@ -96,7 +97,7 @@ const Footer: React.FC = () => {
             </Link>
             </div> */}
         </div>
-            <ul className="flex flex-col gap-2 pr-7 md:pt-48 mt-4 gap-5">
+            <ul className="flex flex-col gap-2 pr-16 md:pt-48 mt-4 gap-5">
   
               <li>
                 <Link
@@ -121,8 +122,8 @@ const Footer: React.FC = () => {
             </ul>
       </div>
 
-      <div className=" sm:pl-11">
-        <p>&copy; 2025 Tech Craft, All Rights Reserved</p>
+      <div className=" sm:pl-11 md:pl-5 !pb-2  ">
+        <p>&copy;  2024 WEBSITE ALGORITHMS,  All Rights Reserved</p>
       </div>
 
       {/* Privacy Policy Modal */}
@@ -152,7 +153,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       )}
-<div className="sm:pl-11">
+<div className="sm:pl-11 md:pl-0">
 {showTermsModal && (
         <div className="modal" onClick={handleModalClose}>
           <div className="modal-content">
@@ -167,7 +168,7 @@ const Footer: React.FC = () => {
 </div>
       {/* Terms & Conditions Modal */}
 
-      <ul className="flex flex-col gap-2 sm:pl-[400px] md:pl-[700px] lg:pl-[1000px]  mt-4 gap-5">
+      <ul className="flex flex-col gap-2 sm:pl-[400px] md:pl-[700px] lg:pl-[1050px] 2xl:pl-[1200px]  mt-4 gap-5">
   <li>
     <Link
       href="#"
@@ -176,14 +177,14 @@ const Footer: React.FC = () => {
         setShowTermsModal(true);
       }}
     >
-      ► Terms &amp; Conditions
+     Terms &amp; Conditions
     </Link>
     {" | "}
     <Link
       href="/privacy-policy"
      
     >
-      ► Privacy Policy
+     Privacy Policy
     </Link>
   </li>
   </ul>

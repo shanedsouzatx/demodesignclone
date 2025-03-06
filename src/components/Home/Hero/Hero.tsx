@@ -10,10 +10,10 @@ const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex p-3 md:p-7">
       {/* Left Content: Scrollable text */}
-      <div className="flex-1 p-8 overflow-y-auto pt-[290px] space-y-8">
+      <div className="flex-1 p-8 overflow-y-auto pt-[240px] space-y-3">
        <div className="container">
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl font-bold text-blue-600 mb-4">
           Behavior Analysis & <br /> Therapy Partners (BATP)
         </h1>
         <div className="h-[3px] bg-blue-500 w-[86%] my-4 pl-9" />
@@ -38,9 +38,9 @@ const Hero: React.FC = () => {
               onMouseEnter={() => setShowTooltip(true)}
               onMouseLeave={() => setShowTooltip(false)}
             >
-              <FaInfoCircle className="text-blue-500 cursor-help" />
+              <FaInfoCircle className="text-blue-500 " />
               {showTooltip && (
-                <div className="absolute z-10 w-72 p-4 bg-white rounded-lg shadow-lg border border-gray-200 left-2 bottom-6">
+                <div className="absolute z-10 w-96 p-4 rounded-lg shadow-lg border bg-gray-300 border-gray-200 right-2 bottom-6">
                   <div className="text-sm text-gray-700">
                     <ul className="list-disc list-inside">
                       <li>Andrew Jackson School</li>
@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
                       <li>William M. Meredith School</li>
                     </ul>
                   </div>
-                  <div className="absolute top-2 right-3 w-3 h-3 bg-white border-t border-l border-gray-200 transform rotate-45"></div>
+                  {/* <div className="absolute top-2 left-3 w-3 h-3 bg-white border-t border-l border-gray-200 transform rotate-45"></div> */}
                 </div>
               )}
             </div>
@@ -103,12 +103,13 @@ const Hero: React.FC = () => {
 
         {/*  */}
 
-        <h2 className="text-3xl font-semibold">Payment Options</h2>
+        <h2 className="text-3xl font-semibold pt-4">Payment Options</h2>
 
         <p className="text-lg text-gray-600">
-          Most individuals under 21 are eligible for our services at no cost to you through PA Medicaid.
+        All services are free to families .
           <br />
-          If you don&apos;t have coverage yet, call us to learn more or to get authorization for services.
+          <br />
+          Nearly all individuals under 21 are eligible for our services at no cost.  We are paid by PA Medicaid. If you do not have coverage yet, call us. If you do have PA Medicaid contact us to pursue authorization for services.
 
 
         </p>

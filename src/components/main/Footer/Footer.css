@@ -2,7 +2,7 @@
 .footer {
     background: #258d15;
     color: #fff;
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     font-family: Arial, sans-serif;
   }
   
@@ -21,12 +21,12 @@
   
   .footer-logo {
     /* max-width: 150px; */
-    margin-bottom: 20px;
+    margin-bottom:0px;
   }
   
   .footer-left p {
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   
   .social-icons a {

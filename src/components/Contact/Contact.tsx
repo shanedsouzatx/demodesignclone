@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Services from "@/app/services/page";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -16,11 +17,17 @@ const Contact: React.FC = () => {
   });
 
   const locations = [
-    { name: "Bala Cynwyd Office", email: "location1@example.com" },
-    { name: "Philadelphia Office", email: "location2@example.com" },
-    { name: "South Philadelphia Satellite Office", email: "location3@example.com" },
+    { name: "Philadelphia", email: "location1@example.com" },
+    { name: "Montgomery, Bucks, or Delaware county", email: "location2@example.com" },
+    // { name: "South Philadelphia Satellite Office", email: "location3@example.com" },
   ];
 
+  const job = [
+    { name: "Services", email: "location1@example.com" },
+    { name: "Employment ", email: "location2@example.com" },
+    { name: "Something else ", email: "location2@example.com" },
+    // { name: "South Philadelphia Satellite Office", email: "location3@example.com" },
+  ];
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const target = e.target as HTMLInputElement;  // Type assertion
     const { name, value, type, checked } = target;
@@ -151,6 +158,22 @@ const Contact: React.FC = () => {
                   className="form-radio text-blue-600"
                 />
                 <span>{loc.name}</span>
+              </label>
+            ))}
+          </div>
+  {/* setvice Selection */}
+  <div className="flex flex-col space-y-2">
+            <p className="text-sm font-semibold  md:text-lg">Are you interested in :</p>
+            {job.map((ser:any, index:any) => (
+              <label key={index} className="flex items-center space-x-2">
+                <input
+                  type="radio"
+                  name="job"
+                  value={ser.name}
+                  onChange={handleChange}
+                  className="form-radio text-blue-600"
+                />
+                <span>{ser.name}</span>
               </label>
             ))}
           </div>
