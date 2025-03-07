@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
       </div>
   
       <div className="text-center md:text-left sm:pl-11 md:ml-11 max-w-7xl mx-auto !pb-2 xl:-ml-7">
-        <p>&copy; 2024 WEBSITE ALGORITHMS, All Rights Reserved</p>
+        <p>&copy; 2024 BATP, All Rights Reserved</p>
       </div>
   
       {/* Privacy Policy Modal */}

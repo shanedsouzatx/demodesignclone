@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
             >
               <FaInfoCircle className="text-blue-500 " />
               {showTooltip && (
-                <div className="absolute z-10 w-96 p-4 rounded-lg shadow-lg border bg-gray-300 border-gray-200 right-2 bottom-6">
+                <div className="absolute z-10 w-max md:w-96 p-4 rounded-lg shadow-lg border bg-gray-300 border-gray-200 right-2 bottom-6">
                   <div className="text-sm text-gray-700">
                     <ul className="list-disc list-inside">
                       <li>Andrew Jackson School</li>
