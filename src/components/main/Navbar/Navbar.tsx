@@ -35,7 +35,7 @@ const Navbar = () => {
         showNavbar ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
-      <div className="flex flex-col py-5 lg:py-3 px-6  gap-20 md:px-16 lg:px-13 md:flex-row items-center justify-between max-w-[1900px] mx-auto ">
+      <div className="flex flex-col sm:py-5 lg:py-3 px-6 gap-11 sm:gap-20 md:px-16 lg:px-13 md:flex-row items-center justify-between max-w-[1900px] mx-auto ">
         {/* Logo Section */}
         <div className="flex flex-col items-center text-right md:flex-row md:text-center">
           <Link href="/">
@@ -86,7 +86,7 @@ const Navbar = () => {
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </Button>
           {isOpen && (
-            <div className="absolute left-0 top-full w-full bg-white shadow-lg p-4 flex flex-col gap-4 border-r border-gray-200">
+            <div className="absolute left-0 top-full w-full bg-white shadow-lg p-2 flex flex-col gap-4 border-r border-gray-200">
               {navItems.map((item) => {
                 const linkPath = item === "Home" ? "/" : `/${item.toLowerCase().replace(/ /g, "-")}`;
                 const isActive = pathname === linkPath;
