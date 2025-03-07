@@ -9,7 +9,7 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ title, content, imageUrl, altText }) => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-10">
+    <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-10 bg-red-500  ">
       {/* Left: Heading & Paragraph */}
       <div className="md:w-2/3">
         <h2 className="text-2xl font-bold text-green-700">{title}</h2>
@@ -49,7 +49,7 @@ const Biofeedback: React.FC = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <div className="max-w-6xl mx-auto p-6 ">
       <h1 className="text-3xl font-bold text-green-700 mb-6">Neurofeedback Program Overview</h1>
       {sections.map((section, index) => (
         <Section key={index} {...section} />

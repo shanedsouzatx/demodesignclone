@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero3() {
   return (
     <div>
-    <div className="flex flex-col md:flex-row items-center justify-between py-12 px-4">
+    <div className="flex flex-col md:flex-row items-center justify-between py-7 px-4">
    
    {/* Left: Image */}
    <div className="md:w-1/2 w-full max-w-[600px] pl-11 mx-auto">

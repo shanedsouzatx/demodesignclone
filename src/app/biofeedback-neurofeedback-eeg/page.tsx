@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link"
 const Biofeedback: React.FC = () => {
   return (
-    <div className="max-w-9xl mx-auto pt-[240px] p-6 px-11 ">
+    <div className="max-w-8xl mx-auto pt-[390px] lg:pt-[240px] p-6 px-11 ">
       {/* Page Heading */}
       <h1 className="text-3xl md:text-4xl font-bold text-green-700 mb-6">
         Neurofeedback Program Overview
@@ -19,7 +19,7 @@ const Biofeedback: React.FC = () => {
             for children. But BATP does not offer neurofeedback due to insurance.
           </p>
         </div>
-        <div className="md:w-1/3 -mt-16 pr-16 ">
+        <div className="md:w-1/3 lg:-mt-16 md: pr-16 ">
           <Image
             src="/images/bio1.jpg"
             alt="Kids playing outside"
@@ -31,7 +31,7 @@ const Biofeedback: React.FC = () => {
       </div>
 
       {/* Second Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-11 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 xl:-mt-11 ">
         <div className="md:w-2/5">
           <h2 className="text-2xl font-bold text-black">ABAI Poster Presentation</h2>
           <p className="text-gray-800 mt-3">
@@ -59,7 +59,7 @@ const Biofeedback: React.FC = () => {
         </div>
       </div>
        {/* 3rd Section */}
-       <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-28 ">
+       <div className="flex flex-col md:flex-row justify-between items-start gap-9  xl:-mt-28 ">
         <div className="md:w-2/5 -mb-20 ">
           <h2 className="text-2xl font-bold text-black">Understanding Biofeedback</h2>
           <p className="text-gray-800 mt-2">
@@ -78,7 +78,7 @@ const Biofeedback: React.FC = () => {
       </div>
 
       {/* 4th Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-72 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 lg:-mt-40 xl:-mt-72 ">
         <div className="md:w-2/5">
           <h2 className="text-2xl font-bold text-black">Expert Article</h2>
           <p className="text-gray-800 mt-2">
@@ -98,19 +98,19 @@ const Biofeedback: React.FC = () => {
         </div>
       </div> 
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-[530px] ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[100px] lg:-mt-[530px] ">
         <div className="md:w-2/5">
           <h2 className="text-3xl font-bold text-black">Program Proposal</h2>
           <p className="text-gray-800 mt-2">
           Gary also wrote a proposal to CBH outlining an ideal funded project for the neurofeedback program. This proposal discusses
           </p>
          </div>
-        <div className="md:w-1/3 mt-72">
+        <div className="md:w-1/3 md:mt-72 ">
          
         </div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-48 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-36 lg:-mt-48 ">
         <div className="md:w-2/5 py-4">
           <h2 className="text-3xl font-bold text-black">Previous Program Outcomes</h2>
           <p className="text-gray-800 py-3">
@@ -120,12 +120,12 @@ const Biofeedback: React.FC = () => {
  
       <span className="text-black font-bold">Decreased : </span>   Stress, impulsivity, disruptive behavior, violence, outbursts, suspensions, negativity, tardiness, learning disabilities, and medication reliance.  </p>
         </div>
-        <div className="md:w-1/3 mt-72">
+        <div className="md:w-1/3 md:mt-72">
          
         </div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-[120px] ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-[50px] lg:-mt-[90px] xl:-mt-[110px] ">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl font-bold text-black">BrainPaint System Benefits</h2>
           <p className="text-gray-800 mt-2">
@@ -133,23 +133,23 @@ const Biofeedback: React.FC = () => {
 <a href="https://n1536252.websitebuilder.online/wp-content/uploads/go-x/u/0624b328-33fd-4d2b-a99c-df74c56d4cae/Neurofeedback-in-Schools.pdf" className="text-[#CF337A] ">View the proposal: “Neurofeedback in Schools Program” (PDF)</a>
  </p>
          </div>
-        <div className="md:w-1/3 mt-72">
+        <div className="md:w-1/3 md:mt-72">
          
         </div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-36 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-16 lg:-mt-36 ">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl font-bold text-black">Program Outcomes</h2>
           <p className="text-gray-800 mt-2">We tracked the results of students who completed the neurofeedback training sessions, and the findings are promising. See the results:
     <a href="https://demodesignz.com/projects/grey/wp-content/uploads/2025/01/Neurofeedback_Training_Outcomes_in_Children.pdf" className="text-[#CF337A] font-bold"> “Neurofeedback Training Outcomes in Children” (PDF)
 </a>   </p>
         </div>
-        <div className="md:w-1/3 mt-72">
+        <div className="md:w-1/3 md:mt-72">
          
         </div>
       </div>{/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-36 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-16 lg:-mt-36 ">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl font-bold text-black">Conclusion</h2>
           <p className="text-gray-800 mt-2 pb-2">
@@ -158,7 +158,7 @@ const Biofeedback: React.FC = () => {
 
 For more information about neurofeedback please contact <Link  href="mailto:BATPaa@gmail.com" className="text-[#CF337A] underline"> GaryAmes@comcast.net </Link> or call <span className="text-black font-bold"> 610-668-3223  </span></p>
         </div>
-        <div className="md:w-1/3 mt-72">
+        <div className="md:w-1/3 md:mt-72">
          
         </div>
       </div>
