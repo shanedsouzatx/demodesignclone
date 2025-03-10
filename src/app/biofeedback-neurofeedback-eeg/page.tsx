@@ -80,7 +80,7 @@ const Biofeedback: React.FC = () => {
       {/* 4th Section */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 lg:-mt-40 xl:-mt-72 ">
         <div className="md:w-2/5">
-          <h2 className="text-2xl font-bold text-black">Expert Article</h2>
+          <h2 className="text-2xl pt-4 font-bold text-black">Expert Article</h2>
           <p className="text-gray-800 mt-2">
           Gary Ames and Joe Cautilli co-authored an article discussing how neurofeedback aligns with ABA principles.  Read the article: <a href="https://n1536252.websitebuilder.online/wp-content/uploads/go-x/u/a2df9afe-4204-43ab-ade9-fe8c97109f59/Neurofeedback-is-a-form-of-Applied-Behavior-Analysis.pdf">“Neurofeedback is a Form of Applied Behavior Analysis” (PDF)</a> 
           </p>
@@ -100,7 +100,7 @@ const Biofeedback: React.FC = () => {
       {/* NEXT */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[10px] lg:-mt-[530px] ">
         <div className="md:w-2/5">
-          <h2 className="text-3xl font-bold text-black">Program Proposal</h2>
+          <h2 className="text-3xl pt-5 font-bold text-black">Program Proposal</h2>
           <p className="text-gray-800 mt-2">
           Gary also wrote a proposal to CBH outlining an ideal funded project for the neurofeedback program. This proposal discusses
           </p>
@@ -112,7 +112,7 @@ const Biofeedback: React.FC = () => {
       {/* NEXT */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-36 lg:-mt-48 ">
         <div className="md:w-2/5 py-4">
-          <h2 className="text-3xl font-bold text-black">Previous Program Outcomes</h2>
+          <h2 className="text-3xl pt-5 font-bold text-black">Previous Program Outcomes</h2>
           <p className="text-gray-800 py-3">
     <span className="text-black font-bold">Increased : </span>Attention, sleep quality, attendance, relaxation, memory, grades, social skills, and tolerance.
 
@@ -127,7 +127,7 @@ const Biofeedback: React.FC = () => {
       {/* NEXT */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-[50px] lg:-mt-[90px] xl:-mt-[110px] ">
         <div className="md:w-2/5 py-5">
-          <h2 className="text-3xl font-bold text-black">BrainPaint System Benefits</h2>
+          <h2 className="text-3xl font-bold pt-5 text-black">BrainPaint System Benefits</h2>
           <p className="text-gray-800 mt-2">
           The proposal highlights the benefits of the BrainPaint system, including low cost, ease of use, AI technology, and strong research support.
 <a href="https://n1536252.websitebuilder.online/wp-content/uploads/go-x/u/0624b328-33fd-4d2b-a99c-df74c56d4cae/Neurofeedback-in-Schools.pdf" className="text-[#CF337A] ">View the proposal: “Neurofeedback in Schools Program” (PDF)</a>
@@ -140,7 +140,7 @@ const Biofeedback: React.FC = () => {
       {/* NEXT */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-16 lg:-mt-36 ">
         <div className="md:w-2/5 py-5">
-          <h2 className="text-3xl font-bold text-black">Program Outcomes</h2>
+          <h2 className="text-3xl pt-5 font-bold text-black">Program Outcomes</h2>
           <p className="text-gray-800 mt-2">We tracked the results of students who completed the neurofeedback training sessions, and the findings are promising. See the results:
     <a href="https://demodesignz.com/projects/grey/wp-content/uploads/2025/01/Neurofeedback_Training_Outcomes_in_Children.pdf" className="text-[#CF337A] font-bold"> “Neurofeedback Training Outcomes in Children” (PDF)
 </a>   </p>
@@ -151,7 +151,7 @@ const Biofeedback: React.FC = () => {
       </div>{/* NEXT */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-16 lg:-mt-36 ">
         <div className="md:w-2/5 py-5">
-          <h2 className="text-3xl font-bold text-black">Conclusion</h2>
+          <h2 className="text-3xl pt-5 font-bold text-black">Conclusion</h2>
           <p className="text-gray-800 mt-2 pb-2">
           The findings from our neurofeedback training program confirms that this intervention is broadly effective, yielding significant durable results for participants.
 <br/>
