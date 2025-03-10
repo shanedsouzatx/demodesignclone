@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link"
 const Biofeedback: React.FC = () => {
   return (
-    <div className="max-w-8xl mx-auto pt-[390px] lg:pt-[240px] p-6 px-11 ">
+    <div className="max-w-8xl mx-auto overflow-x-auto pt-[390px] lg:pt-[240px] p-6 px-11 ">
       {/* Page Heading */}
       <h1 className="text-3xl md:text-4xl font-bold text-green-700 mb-6">
         Neurofeedback Program Overview
@@ -19,7 +19,7 @@ const Biofeedback: React.FC = () => {
             for children. But BATP does not offer neurofeedback due to insurance.
           </p>
         </div>
-        <div className="md:w-1/3 lg:-mt-16 md: pr-16 ">
+        <div className="md:w-1/3 mt-6 lg:-mt-16 md: pr-16 ">
           <Image
             src="/images/bio1.jpg"
             alt="Kids playing outside"
@@ -87,7 +87,7 @@ const Biofeedback: React.FC = () => {
           {/* <a href='https://demodesignz.com/projects/grey/wp-content/uploads/2025/01/ABAI_Presentation_GA-1.pdf' className="text-red-600 font-bold py-9 " target="_blank">View the poster presentation here</a> */}
          
         </div>
-        <div className="md:w-1/3 mt-72">
+        <div className="md:w-1/3 mt-16 md:mt-72">
           <Image
             src="/images/bio4.png"
             alt="Baby sitting on a bench"
@@ -98,7 +98,7 @@ const Biofeedback: React.FC = () => {
         </div>
       </div> 
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[100px] lg:-mt-[530px] ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[10px] lg:-mt-[530px] ">
         <div className="md:w-2/5">
           <h2 className="text-3xl font-bold text-black">Program Proposal</h2>
           <p className="text-gray-800 mt-2">

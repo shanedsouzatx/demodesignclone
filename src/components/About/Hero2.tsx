@@ -19,23 +19,23 @@ const Hero2: React.FC = () => {
       </div>  <div className="flex-1 p-8 overflow-y-auto    space-y-8">
        <div className="container">
 
-       <h1 className="text-2xl -mt-[20px] lg:-mt-0 md:text-5xl text-blue-500 font-bold mb-4">
+       <h1 className="text-2xl -mt-[20px] lg:-mt-0 md:text-3xl text-black font-bold mb-4">
        Leadership Team
         </h1>       
        </div>
-        <p className="text-xl text-black">
+        <p className="text-lg text-black">
         At Behavior Analysis & Therapy Partners (BATP), our leadership team brings together a wealth of experience and expertise in behavioral health. Each member provides exceptional care and support to our clients and their families. </p>
         {/*  */}
-        <h2 className="text-4xl font-semibold">Joseph Cautilli, Ph.D.
-        </h2> <h2 className="text-lg font-semibold">Co-Founder & Clinical Director  
+        <h2 className="text-3xl font-bold">Joseph Cautilli, Ph.D.
+        </h2> <h2 className="text-md font-bold">Co-Founder & Clinical Director  
         </h2>
         <p className="text-lg text-black">
         Dr. Joseph Cautilli is a licensed clinical psychologist, professional counselor, and a Board-Certified Behavior Analyst-D. With a career spanning since 1984, he has addressed the behavioral health and rehabilitation needs of children and adults facing severe mental health conditions, emotional behavior disorders, and psychiatric disorders, including autism spectrum disorders, depression, and developmental disabilities. Additionally, Dr. Cautilli has experience in criminal justice, focusing on the rehabilitation of offenders in both jails and the community. He is internationally recognized for his treatment work and adherence to ethical standards. 
         </p>
         
         {/*  */}
-        <h2 className="text-3xl font-semibold">Gary Ames, M.A., M.B.A.
-        </h2><h2 className="text-lg font-semibold">Co-Founder
+        <h2 className="text-3xl font-bold">Gary Ames, M.A., M.B.A.
+        </h2><h2 className="text-md font-semibold">Co-Founder
         </h2>
         <p className="text-lg text-black">
         Gary Ames is a licensed clinical psychologist and co-founder of BATP. He is currently focused on special projects that aim to enhance the quality of work life within the organization.
@@ -48,14 +48,14 @@ Learn more at:
         </p>
        
         {/*  */}
-        <h2 className="text-3xl font-semibold">Halina Dziewolska
-        </h2><h2 className="text-xl font-semibold">Co-Manager & Clinical Supervisor
+        <h2 className="text-3xl font-bold">Halina Dziewolska
+        </h2><h2 className="text-md font-semibold">Co-Manager & Clinical Supervisor
 
         </h2>
         <p className="text-lg text-black">
         Halina Dziewolska holds a master’s in education and an MS in Special Education with a concentration in Applied Behavior Analysis. As a Board-Certified Behavior Analyst and a licensed Behavior Specialist in Pennsylvania, she has dedicated her career to serving children with developmental disabilities and emotional-behavioral disorders since 2000. Halina has served on the faculty at St. Joseph’s University and Arcadia University, and she provides clinical supervision at BATP while co-managing the organization.
-        </p><h2 className="text-3xl font-semibold">Lynn Santilli Connor
-        </h2><h2 className="text-xl font-semibold">Executive Director
+        </p><h2 className="text-3xl font-bold">Lynn Santilli Connor
+        </h2><h2 className="text-lg font-semibold">Executive Director
 
         </h2>
         <p className="text-lg text-black">

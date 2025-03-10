@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen pt-20 flex p-3 md:p-7">
+    <section className="min-h-screen pt-20 flex p-1 md:p-7">
       {/* Left Content: Scrollable text */}
       <div className="flex-1 p-8 overflow-y-auto pt-[300px] lg:pt-[170px] space-y-8">
        <div className="container">
@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
         Who We Are
         </h2>
        </div>
-        <p className="text-xl text-black">
+        <p className="text-lg  text-black">
         Founded in 2006, Behavior Analysis & Therapy Partners (BATP) has grown to become a leading provider of behavioral health services, employing over 100 dedicated professionals. We proudly serve South Philadelphia, including approximately a dozen schools, and extend our services through Medicaid to families in Bucks, Montgomery, and Delaware counties.
         </p>
         {/*  */}
