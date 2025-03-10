@@ -69,7 +69,7 @@ export default function Footer() {
 
         {/* Bottom Copyright */}
         <div className="border-t border-white/20 mt-8 pt-4 flex flex-col md:flex-row justify-between text-sm">
-          <div>Copyright © 2025 WEBSITE ALGORITHMS, All Rights Reserved</div>
+          <div>Copyright © 2025 BATP, All Rights Reserved</div>
           <div className="mt-2 md:mt-0">
             <span  className="">
               Terms & Conditions
