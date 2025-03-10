@@ -13,9 +13,9 @@ export default function Hero() {
 
 
 
-</p>  <p className="text-gray-600  mt-4">We will review your qualifications when you send us your information. Link to portal
+</p>  <p className="text-gray-600  mt-4">We will review your qualifications when you send us your information.   <Link href="/job-application" className="text-blue-500 underline underline-offset-4 ">We are hiring now!</Link>
 </p>
-   <Link href="" className="text-blue-500 underline underline-offset-4 ">We are hiring now!</Link>
+ 
    </div>
    </>
   );

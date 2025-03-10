@@ -18,7 +18,7 @@ export default function Location() {
       image: "/images/l4.jpg",
     },
     {
-      city: "South Philadelphia Satellite Office",
+      city: "South Philadelphia Office",
       address: "2132 South 10th St. Philadelphia, PA 19148  ",
       image: "/images/l5.jpg",
     },

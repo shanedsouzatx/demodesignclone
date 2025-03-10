@@ -17,7 +17,7 @@ const locations = [
     fax: "267-507-2720",
   },
   {
-    city: "South Philadelphia Satellite Office",
+    city: "South Philadelphia Office",
     address: "2132 South 10th St. Philadelphia, PA 19148  ",
   },
 ];

@@ -73,7 +73,7 @@ const JobApplication: React.FC = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 flex justify-center items-center">
+    <div className="max-w-7xl mx-auto px-4 py-9 lg:-mt-20 flex justify-center items-center">
       <div className="w-full max-w-lg">
         <h2 className="text-2xl md:text-5xl text-blue-500 font-bold">Apply Here</h2>
         <hr className="border-blue-500 w-16 mt-2 mb-4" />

@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
   return (
     <section className="min-h-screen pt-20 flex p-3 md:p-7">
       {/* Left Content: Scrollable text */}
-      <div className="flex-1 p-8 overflow-y-auto pt-[340px] lg:pt-[170px] space-y-8">
+      <div className="flex-1 p-8 overflow-y-auto pt-[300px] lg:pt-[170px] space-y-8">
        <div className="container">
 
        <h1 className="text-3xl md:text-5xl text-blue-500 font-bold mb-4">

@@ -18,8 +18,8 @@ const Footer: React.FC = () => {
 
   return (
     <>
-    <footer className="footer !mb-0 !pb-0  !bottom-0 !pt-9 px-7 bg-red-500 ">
-      <div className="footer-container max-w-[1500px] md:max-w-9xl mx-auto  text-[17px]  flex flex-wrap gap-8">
+    <footer className="footer !mb-0 !pb-0  !bottom-0 !pt-9 px-7 bg-red-500 sm:bg-blue-500 md:bg-green-500 lg:bg-yellow-500 xl:bg-red-500 ">
+      <div className="footer-container max-w-[1500px] md:max-w-9xl mx-auto  text-[17px]  flex flex-wrap gap-8 bg-red-500 sm:bg-blue-500 md:bg-green-500 lg:bg-yellow-500 xl:bg-indigo-500">
         {/* Left Section */}
         <div className="footer-left w-full md:w-auto">
           <Image
@@ -72,43 +72,56 @@ const Footer: React.FC = () => {
         </div>
   
         {/* Right Section */}
-        <div className="footer-right w-full md:w-auto pt-8 py-5 md:pt-28 lg:pl-[180px] xl:pl-[290px]">
-          <h3 className="text-lg md:text-2xl font-bold mb-1 underline underline-offset-8 ">
-            Explore
-          </h3>
-          <ul className="flex flex-col gap-1 space-y-4 pt-4 md:pt-9 md:pb-5 ">
-            <li>
-              <Link href="/">► Home</Link>
-            </li>
-            <li>
-              <Link href="/about-us">► About Us</Link>
-            </li>
-            <li>
-              <Link href="/services">► Services</Link>
-            </li>
-            <li>
-              <Link href="/join-our-team" className="!w-full block p-0 flex">
-                ► Join Our Team
-              </Link>
-            </li>
-          </ul>
-        </div>
-  
-        <ul className="flex flex-col gap-2 space-y-4 md:pt-48 xl:pr-[80px] mt-4">
-          <li>
-            <Link href="/legal-notice">► Legal Notice</Link>
-          </li>
-          <li>
-            <Link href="/privacy-policy">► Privacy Policy</Link>
-          </li>
-          <li>
-            <Link href="/contact">► Contact Us</Link>
-          </li>
-        </ul>
+       {/* Container */}
+<div className="flex flex-wrap md:flex-col lg:flex-row">
+  {/* Container: Ensures wrapping works properly */}
+<div className="flex flex-wrap md:flex-col lg:flex-row">
+
+{/* Right Section */}
+<div className="footer-right w-full md:w-auto lg:w-auto pt-8 py-5 md:pt-28 lg:pl-[180px] xl:pl-[290px]">
+  <h3 className="text-lg md:text-2xl font-bold mb-1 underline underline-offset-8 ">
+    Explore
+  </h3>
+  <ul className="flex flex-col gap-1 space-y-4 pt-4 md:pt-9 md:pb-5 ">
+    <li>
+      <Link href="/">► Home</Link>
+    </li>
+    <li>
+      <Link href="/about-us">► About Us</Link>
+    </li>
+    <li>
+      <Link href="/services">► Services</Link>
+    </li>
+    <li>
+      <Link href="/join-our-team" className="!w-full block p-0 flex">
+        ► Join Our Team
+      </Link>
+    </li>
+  </ul>
+</div>
+
+{/* Second Section (Legal, Privacy, Contact) */}
+<ul className="w-full md:w-full lg:w-auto flex flex-col gap-2  space-y-4 md:pt-48 | xl:pr-[80px] mt-4">
+  <li>
+    <Link href="/legal-notice">► Legal Notice</Link>
+  </li>
+  <li>
+    <Link href="/privacy-policy">► Privacy Policy</Link>
+  </li>
+  <li>
+    <Link href="/contact">► Contact Us</Link>
+  </li>
+</ul>
+
+</div>
+
+
+</div>
+
       </div>
   
       <div className="text-center md:text-left sm:pl-11 md:ml-11 max-w-7xl mx-auto !pb-2 xl:-ml-7">
-        <p>&copy; 2024 BATP, All Rights Reserved</p>
+        <p>&copy; 2025 BATP, All Rights Reserved</p>
       </div>
   
       {/* Privacy Policy Modal */}
