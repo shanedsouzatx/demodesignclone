@@ -33,7 +33,7 @@ const Biofeedback: React.FC = () => {
       {/* Second Section */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 xl:-mt-11 ">
         <div className="md:w-2/5">
-          <h2 className="text-2xl font-bold text-black">ABAI Poster Presentation</h2>
+          <h2 className="text-2xl pt-5 font-bold text-black">ABAI Poster Presentation</h2>
           <p className="text-gray-800 mt-3">
             In May 2024, BATP co-founder Gary Ames presented a poster at the 50th 
             Applied Behavior Analysis International Convention, highlighting the 
@@ -61,7 +61,7 @@ const Biofeedback: React.FC = () => {
        {/* 3rd Section */}
        <div className="flex flex-col md:flex-row justify-between items-start gap-9  xl:-mt-28 ">
         <div className="md:w-2/5 -mb-20 ">
-          <h2 className="text-2xl font-bold text-black">Understanding Biofeedback</h2>
+          <h2 className="text-2xl pt-5 font-bold text-black">Understanding Biofeedback</h2>
           <p className="text-gray-800 mt-2">
           During the convention, Gary posed a thought-provoking question to attendees: Is biofeedback a form of Applied Behavior Analysis (ABA)? After some discussion, everyone agreed that it is. To illustrate this, he invited them to try standing on one foot with their eyes open and then closed. This exercise demonstrated how non-verbal increased self-awareness can lead to better self-control and improved self-regulation.
           </p>
