@@ -40,16 +40,20 @@ const Hero: React.FC = () => {
             >
               <FaInfoCircle className="text-blue-500 " />
               {showTooltip && (
-                <div className="absolute z-10 w-max lg:w-96 p-4 rounded-lg shadow-lg border bg-gray-300 border-gray-200 right-2 bottom-6">
-                  <div className="text-sm text-gray-700">
+                <div className="absolute z-10 w-[270px] -left-[210px] sm:-left-60  sm:w-[410px]    md:-left-[323px] md:w-[345px] lg:w-[460px] p-4 rounded-lg shadow-lg border bg-gray-300 border-gray-200  lg:-left-30 bottom-6">
+                  <div className="text-sm  text-gray-700">
                     <ul className="list-disc list-inside">
-                      <li>Andrew Jackson School</li>
-                      <li>Fell School</li>
-                      <li>Francis Scott Key School</li>
-                      <li>George W. Nebinger School</li>
-                      <li>Southwark School</li>
-                      <li>Vare-Washington School</li>
-                      <li>William M. Meredith School</li>
+                      <li>Educational Options Program - South Philadelphia High School</li>
+                      <li>Preparatory Charter School of Mathematics, Tech and Careers</li>
+                      <li>Sts John Neumann and Maria Goretti Catholic High School</li>
+                      <li>Creative and Performing Arts High School (CAPA)</li>
+                      <li>Mastery Charter School - Thomas Campus</li>
+                      <li>Girard Academic Music Program (GAMP)</li>
+                      <li>Universal Audenried Charter School</li>
+                      <li>South Philadelphia High School</li>
+                      <li>Crooked Places Made Straight</li>
+                      <li>Horace Furness High School</li>
+                      <li>Academy at Palumbo</li>
                     </ul>
                   </div>
                   {/* <div className="absolute top-2 left-3 w-3 h-3 bg-white border-t border-l border-gray-200 transform rotate-45"></div> */}
