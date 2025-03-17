@@ -6,6 +6,16 @@ import Link from "next/link";
 const PrivacyPolicy: React.FC = () => {
   return (
     <section className="min-h-screen flex p-3 md:p-7">
+   <div className="w-1/2 hidden md:block">
+        <div className="sticky h-[1000px] top-0 h-screen">
+          <Image
+            src="/images/privacy1.jpg"  // Ensure this image exists in /public/images/
+            alt="Hero Image"
+            fill
+            className="object-cover"
+          />
+        </div>
+      </div>
       {/* Left Content: Scrollable text */}
       <div className="flex-1 p-8 overflow-y-auto sm:pl-16 md:pl-20 lg:pl-24 xl:pl-32  pt-[390px] lg:pt-[220px] space-y-8">
        <div className="container">
@@ -18,28 +28,21 @@ const PrivacyPolicy: React.FC = () => {
        </div>
        
       <ul className="list-disc pl-5 text-gray-700 px-7">
-      <li> BATP full contact details;</li>
+      {/* <li> BATP full contact details;</li>
       <li> the types of personal data you collect;</li>
       <li> where you got people’s data from, if it wasn’t from them;</li>
       <li> why you have people’s information and what you’re doing with it;</li>
       <li> your lawful basis and your legitimate interests where relevant;</li>
       <li> who you share people’s information with; and</li>
-      <li> how long you hold people’s information for before
-        <Link href="https://ico.org.uk/for-organisations/advice-for-small-organisations/whats-new/blogs/practical-methods-for-destroying-documents-that-are-no-longer-needed/" className="text-blue-500 hover:text-gray-600"> getting rid of it securely.</Link></li>
+       */}
+       <li>Data will be stored and processed for the purpose of establishing contact. You may revoke my consent to store at any time.</li>
+      {/* <li> how long you hold people’s information for before
+        <Link href="https://ico.org.uk/for-organisations/advice-for-small-organisations/whats-new/blogs/practical-methods-for-destroying-documents-that-are-no-longer-needed/" className="text-blue-500 hover:text-gray-600"> getting rid of it securely.</Link></li> */}
       </ul>
       </div>
 
       {/* Right Image: Stays fixed as you scroll */}
-      <div className="w-1/2 hidden md:block">
-        <div className="sticky h-[1000px] top-0 h-screen">
-          <Image
-            src="/images/privacy1.jpg"  // Ensure this image exists in /public/images/
-            alt="Hero Image"
-            fill
-            className="object-cover"
-          />
-        </div>
-      </div>
+     
     </section>
   );
 };

@@ -19,6 +19,8 @@ const locations = [
   {
     city: "South Philadelphia Office",
     address: "2132 South 10th St. Philadelphia, PA 19148  ",
+    number: "267-507-2719",
+    fax: "267-507-2720",
   },
 ];
 

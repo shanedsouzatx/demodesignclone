@@ -34,13 +34,13 @@ const Hero: React.FC = () => {
         139 Montgomery Avenue, #110, Bala Cynwyd, PA 19004
 
         </p> <p className="text-lg text-gray-600">
-        ChantelleBosier@batp.org 
-
+        <Link href="mailto:chantellebosier@batp.org" className="">chantellebosier@batp.org</Link>{" "}
+    
         </p>
        
     
         {/*  */}
-        <h2 className="text-3xl font-semibold">Business ID no.
+        {/* <h2 className="text-3xl font-semibold">Business ID no.
         </h2>
         <p className="text-lg text-gray-600">
         Please enter your business ID no.
@@ -52,7 +52,6 @@ const Hero: React.FC = () => {
         Please enter your VAT no.
         </p>
 
-        {/*  */}
 
         <h2 className="text-3xl font-semibold">Regulatory authority</h2>
 
@@ -60,7 +59,7 @@ const Hero: React.FC = () => {
         Please enter your regulatory authority
 1930 S. Broad Street, #26, Philadelphia, PA 19145
 2132 S. 10th St. Philadelphia, PA 19148
-        </p>
+        </p> */}
        
        
       </div>

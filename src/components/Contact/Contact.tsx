@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
         <Image src="/images/con8.jpg" alt="Email" width={104} height={104} className="-ml-3 w-16 h-16" />
         <div>
           <p className="font-semibold">Email</p>
-          <Link href="mailto:BATPaa@gmail.com" className="">BATPaa@gmail.com</Link>{" "}
+          <Link href="mailto:chantellebosier@batp.org" className="">chantellebosier@batp.org</Link>{" "}
     
         </div>
       </div>
@@ -132,7 +132,9 @@ const Contact: React.FC = () => {
       <div className="flex items-start gap-2">
         <input type="checkbox" name="consent" checked={formData.consent} onChange={handleChange} className="mt-1" required />
         <p className="text-sm text-gray-700">
-          I hereby agree that this data will be stored and processed for the purpose of establishing contact. I am aware that I can revoke my consent at any time.
+        
+Data will be stored and processed for the purpose of establishing contact. You may revoke my consent to store at any time.
+
         </p>
       </div>
 
@@ -149,7 +151,7 @@ const Contact: React.FC = () => {
     <hr className="border-blue-500 w-16 mt-2 mb-4" />
     <p className="text-gray-700">
       Have questions? Interested in working with us? Send us an{" "}
-      <Link href="mailto:BATPaa@gmail.com" className="text-red-600 underline">Email</Link>{" "}
+      <Link href="mailto:chantellebosier@botp.org" className="text-red-600 underline">Email</Link>{" "}
       to schedule a talk with us.
     </p>
     <p className="mt-4 text-gray-700">

@@ -31,17 +31,17 @@ const Hero: React.FC = () => {
         </p>
         <ul className="list-disc list-inside text-lg text-gray-600">
           <li>Philadelphia</li>
-          <li className="relative flex items-center gap-2">
-        <span className="font-bold text-md">• </span> &nbsp; A cluster of South Philadelphia Schools
+          <li className="relative flex items-center gap-2 ">
+        <span className="font-bold text-md ">• </span> &nbsp; A cluster of South Philadelphia Schools
             <div 
-              className="relative inline-block"
+              className="relative inline-block mt-2 mb-16 "
               onMouseEnter={() => setShowTooltip(true)}
               onMouseLeave={() => setShowTooltip(false)}
             >
-              <FaInfoCircle className="text-blue-500 " />
+              <FaInfoCircle className="text-blue-500 text-md -mb-52 top-20 mt-5 " />
               {showTooltip && (
-                <div className="absolute z-10 w-[270px] -left-[210px] sm:-left-60  sm:w-[410px]    md:-left-[323px] md:w-[345px] lg:w-[460px] p-4 rounded-lg shadow-lg border bg-gray-300 border-gray-200  lg:-left-30 bottom-6">
-                  <div className="text-sm  text-gray-700">
+                <div className="absolute z-10 w-[270px] -left-[210px] sm:-left-60  sm:w-[410px]    md:-left-[323px] md:w-[345px] lg:w-[460px] p-4 rounded-lg shadow-lg border bg-gray-300 border-gray-200  lg:-left-30 bottom-0 ">
+                  <div className="text-sm lg:text-base text-gray-700">
                     <ul className="list-disc list-inside">
                       <li>Educational Options Program - South Philadelphia High School</li>
                       <li>Preparatory Charter School of Mathematics, Tech and Careers</li>

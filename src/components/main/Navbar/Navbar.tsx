@@ -11,14 +11,11 @@ const Navbar = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
+
+  // Navigation Links: 3 links per row (2 rows)
   const navItems = [
-    "Home",
-    "About Us",
-    "Services",
-    "Join Our Team",
-    "Legal Notice",
-    "Privacy Policy",
-    "Contact",
+    ["Home", "About Us", "Services"], // Row 1
+    ["Join our Team", "Legal / Privacy", "Contact"], // Row 2
   ];
 
   useEffect(() => {
@@ -35,38 +32,46 @@ const Navbar = () => {
         showNavbar ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
-      <div className="flex flex-col sm:py-5 lg:py-3 px-6 gap-11 sm:gap-20 md:px-16 lg:px-13 md:flex-row items-center justify-between max-w-[1900px] mx-auto ">
-        {/* Logo Section */}
-        <div className="flex flex-col items-center text-right md:flex-row md:text-center">
+      <div className="flex flex-row items-center justify-between px-6 md:px-20 lg:px-28  max-w-[1900px] mx-auto py-4">
+        {/* Logo Section (Left) */}
+        <div className="flex items-center">
           <Link href="/">
             <Image
               src="/images/logo2.png"
               alt="Logo"
               width={120}
               height={90}
-              className="md:w-[75px] contrast-200"
+              className="w-[75px] contrast-200"
             />
           </Link>
           <Link
             href="/"
-            className="font-semibold text-xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700"
+            className="ml-3 font-semibold text-xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700"
           >
             <span className="block md:inline">Behavior Analysis &</span>
             <span className="block">Therapy Partners</span>
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex flex-wrap text-[17px] text-right justify-end xl:justify-center gap-x-0 xl:gap-x-0 xl:-space-x-2">
-          {navItems.map((item) => {
-            const linkPath = item === "Home" ? "/" : `/${item.toLowerCase().replace(/ /g, "-")}`;
+        {/* Desktop Navigation (Right - 3 Links Per Row) */}
+        <div className="hidden md:grid grid-rows-2 grid-cols-3 gap-x-9 gap-y-3 text-lg text-2xl text-center">
+          {navItems.flat().map((item, index) => {
+            const linkPath =
+              item === "Home"
+                ? "/"
+                : `/${item
+                    .toLowerCase()
+                    .replace(/ /g, "-")
+                    .replace("legal / privacy", "legal-notice")}`;
             const isActive = pathname === linkPath;
             return (
-              <Link key={item} href={linkPath}>
+              <Link key={index} href={linkPath}>
                 <Button
                   variant="ghost"
-                  className={`relative py-3 text-lg text-right transition-colors duration-300 ${
-                    isActive ? "bg-blue-600 text-white" : "hover:bg-blue-600 hover:text-white"
+                  className={`py-3 transition-colors duration-300 ${
+                    isActive
+                      ? "bg-blue-600 text-xl text-white"
+                      : "hover:bg-blue-600 text-xl hover:text-white"
                   }`}
                 >
                   {item}
@@ -78,24 +83,28 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div className="md:hidden">
-          <Button
-            variant="ghost"
-            className="p-2"
-            onClick={() => setIsOpen(!isOpen)}
-          >
+          <Button variant="ghost" className="p-2" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </Button>
           {isOpen && (
             <div className="absolute left-0 top-full w-full bg-white shadow-lg p-2 flex flex-col gap-4 border-r border-gray-200">
-              {navItems.map((item) => {
-                const linkPath = item === "Home" ? "/" : `/${item.toLowerCase().replace(/ /g, "-")}`;
+              {navItems.flat().map((item) => {
+                const linkPath =
+                  item === "Home"
+                    ? "/"
+                    : `/${item
+                        .toLowerCase()
+                        .replace(/ /g, "-")
+                        .replace("legal/privacy", "legal-notice")}`;
                 const isActive = pathname === linkPath;
                 return (
                   <Link key={item} href={linkPath}>
                     <Button
                       variant="ghost"
                       className={`w-full text-right px-5 py-3 ${
-                        isActive ? "bg-blue-600 text-white" : "hover:bg-blue-600"
+                        isActive
+                          ? "bg-blue-600 text-white"
+                          : "hover:bg-blue-600"
                       }`}
                       onClick={() => setIsOpen(false)}
                     >

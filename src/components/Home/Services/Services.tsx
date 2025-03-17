@@ -42,8 +42,8 @@ const Services = () => {
               width={100}
               height={100}
             />
-            <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
-            <p className="text-gray-600 mt-2 text-sm">{service.description}</p>
+            <h3 className="text-2xl md:text-4xl  font-semibold mt-4">{service.title}</h3>
+            <p className="text-gray-600 mt-2 text-lg  text-black">{service.description}</p>
           </motion.div>
         ))}
       </div>
