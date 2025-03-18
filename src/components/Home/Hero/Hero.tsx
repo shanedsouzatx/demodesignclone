@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex p-3 md:p-7">
       {/* Left Content: Scrollable text */}
-      <div className="flex-1 p-8 overflow-y-auto pt-[370px] lg:pt-[170px] space-y-3">
+      <div className="flex-1 p-8 overflow-y-auto pt-[170px] lg:pt-[170px] space-y-3">
        <div className="container">
 
         <h1 className="text-3xl md:text-5xl font-bold text-blue-600 mb-4">
@@ -18,9 +18,9 @@ const Hero: React.FC = () => {
         </h1>
         <div className="h-[3px] bg-blue-500 w-[86%] my-4 pl-9" />
        </div>
-        <p className="text-xl text-gray-700">
+        <p className="text-lg text-gray-700">
           We help children, teens, and young adults overcome behavioral challenges and thrive.
-        </p><p className="text-xl text-gray-700">
+        </p><p className="text-lg text-gray-700">
           At BATP, we use Applied Behavior Analysis (ABA) and other proven methods to provide personalized care. Our services are designed to improve the quality of life for the child and family.
         </p>
         {/*  */}

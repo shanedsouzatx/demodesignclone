@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const PrivacyPolicy: React.FC = () => {
   return (
-    <section className="min-h-screen flex p-3 md:p-7">
+    <section className="min-h-screen flex p-3 md:p-7 hidden md:flex">
    <div className="w-1/2 hidden md:block">
         <div className="sticky h-[1000px] top-0 h-screen">
           <Image

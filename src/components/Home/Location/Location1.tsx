@@ -27,19 +27,19 @@ const Locatiion1 = () => {
   return (
     <section className="pb-9 px-8">
    
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-9 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-9 max-w-6xl mx-auto">
         {locations.map((location, index) => (
           <div
             key={index}
-            className={`p-8  flex flex-col items-center text-center relative transition-transform duration-300 hover:scale-105 ${
+            className={`p-3 md:p-8  flex flex-col items-center text-center relative transition-transform duration-300 hover:scale-105 ${
               index < locations.length - 1 ? "" : ""
             }`}
           >
-        <div className="flex items-center py-7">
+        <div className="flex items-center py-1 md:py-7">
 
             <Image src="/images/con9.png" alt="Location" width={104} height={104} className="w-12 border-[3px ] border-blue-500 h-12 "/>
         </div>
-            <h3 className="text-[20px] font-bold">{location.city}</h3>
+            <h3 className="text-[21px] font-bold">{location.city}</h3>
             <span className="text-gray-700 text-center">Address : </span>
             <p className="text-gray-700 ">{location.address}</p>
             {location.number && (

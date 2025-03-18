@@ -38,11 +38,11 @@ export default function Hero() {
         </p>
       </div>
     </div>
-    {/* 2md */}
+    {/* 2nd */}
     <div className="flex flex-col hidden md:flex md:flex-row items-center justify-between py-11 px-4">
    
    {/* Left: Image */}
-   <div className="md:w-2/3 w-full max-w-[860px] mx-auto">
+   <div className="md:w-2/3 w-full max-w-[860px] mx-auto space-y-3 ">
    <h2 className="text-xl md:text-3xl font-bold text-blue-500    ">Intensive Behavioral Health Services (IBHS) (Ages 5–21)
    </h2>
      <p className="text-[18px]  text-black mt-4">
@@ -72,14 +72,13 @@ export default function Hero() {
      </p>
    </div>
    {/* Right: Heading and Paragraph */}
-   <div className="md:w-1/2 w-full text-left mt-8 md:mt-0 md:pl-16 ">
-    
+   <div className="md:w-1/2 w- text-left mt-8 md:mt-0 md:pl-16 ">
      <Image
         src="/ser2.jpg" // Replace with your image path
         alt="Hero Image"
-        width={1600}
-        height={1600}
-        className="object-cover rounded p-3"
+        width={1500}
+        height={1400}
+        className="object-cover rounded 2xl:p-11 p-2 "
         />
    </div>
  </div>

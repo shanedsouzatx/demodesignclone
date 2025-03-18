@@ -58,8 +58,8 @@ export default function Footer() {
                   <NavLink href="/join-our-team" label="Join Our Team" />
                 </div>
                 <div>
-                  <NavLink href="/legal-notice" label="Legal Notice" />
-                  <NavLink href="/privacy-policy" label="Privacy Policy" />
+                  <NavLink href="/legal-/-privacy" label="Legal / Privacy " />
+                  {/* <NavLink href="/privacy-policy" label="Privacy Policy" /> */}
                   <NavLink href="/contact" label="Contact Us" />
                 </div>
               </div>
