@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Benefits() {
   return (
     <div>
-     <div className="flex flex-col md:flex-row items-center justify-between py-11 pl-16">
+     <div className="flex flex-col md:flex-row items-center justify-between py-11 px-6 md:pl-16">
    
    {/* Left: Image */}
    <div className="md:w-1/2 w-full max-w-[700px]  mx-auto">
@@ -37,7 +37,7 @@ export default function Benefits() {
 </p>
 <p className="text-gray-600 text-lg mt-2">To see how we protect your privacy
     
-    <Link href="/ Legal/Privacy" className="text-blue-500  hover:text-gray-600"> click here </Link>
+    <Link href="/legal-/-privacy" className="text-blue-500  hover:text-gray-600"> click here </Link>
     {/* <Link href="/privacy-policy" className="underline hober hover:text-gray-600">We will protect your information. Link to Privacy Policy. </Link> */}
 </p>
 

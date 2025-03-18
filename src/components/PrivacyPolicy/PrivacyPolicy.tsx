@@ -5,9 +5,9 @@ import Link from "next/link";
 
 const PrivacyPolicy: React.FC = () => {
   return (
-    <section className="min-h-screen flex p-3 md:p-7 hidden md:flex">
+    <section className="flex p-3 md:p-7 hidden md:flex">
    <div className="w-1/2 hidden md:block">
-        <div className="sticky h-[1000px] top-0 h-screen">
+        <div className="sticky h-[500px] top-0 ">
           <Image
             src="/images/privacy1.jpg"  // Ensure this image exists in /public/images/
             alt="Hero Image"
@@ -17,7 +17,7 @@ const PrivacyPolicy: React.FC = () => {
         </div>
       </div>
       {/* Left Content: Scrollable text */}
-      <div className="flex-1 p-8 overflow-y-auto sm:pl-16 md:pl-20 lg:pl-24 xl:pl-32  pt-[390px] lg:pt-[220px] space-y-8">
+      <div className="flex-1 p-8 overflow-y-auto sm:pl-16 md:pl-20 lg:pl-16 xl:pl-28  pt-[390px] lg:pt-[190px] space-y-8">
        <div className="container">
 
         <h1 className="text-xl md:text-4xl text-blue-500 font-semibold mb-4">

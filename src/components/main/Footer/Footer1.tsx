@@ -75,7 +75,7 @@ export default function Footer() {
               Terms & Conditions
             </span>
             {" | "}
-            <Link href="/privacy-policy" className="hover:underline">
+            <Link href="/legal-/-privacy" className="hover:underline">
               Privacy Policy
             </Link>
           </div>
