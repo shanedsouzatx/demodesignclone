@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="px-7 max-w-[9xl] mx-auto">
 
-    <h2 className="text-2xl text-center pt-[190px] lg:pt-[200px] md:text-4xl font-bold text-black">Work for Us</h2>
+    <h2 className="text-2xl text-center pt-[190px] lg:pt-[200px] md:text-4xl font-bold text-black">Join Our Team</h2>
   
     <div className="flex flex-col lg:flex-row gap-9 mt-11 ">
       {/* Column 1 */}
