@@ -152,7 +152,7 @@ const Contact: React.FC = () => {
   </div>
 
   {/* Center Section - Bigger Contact Form */}
-  <div className="md:col-span-3  rounded-lg shadow-lg">
+  <div className="md:col-span-3  ">
     <h2 className="text-3xl md:text-4xl text-blue-500 font-bold ">Contact us</h2>
     <hr className="border-blue-500 w-20 mt-2 mb-4 " />
     <form onSubmit={handleSubmit} className="space-y-6">
