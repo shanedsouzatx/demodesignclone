@@ -97,18 +97,16 @@ const Biofeedback: React.FC = () => {
       </div>
 
       {/* 4th Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 px-2 pt-28 -mb-8 sm:pt-0 md:mt-11 lg-110:mt-[-250px] lg-125:-mt-[175px] xl:-mt-[295px] ">
+      <div className="flex flex-col md:flex-row justify-between z-[999] items-start gap-9 px-2 pt-28 -mb-8 sm:pt-0 md:mt-11 lg-110:mt-[-250px] lg-125:-mt-[175px] xl:-mt-[295px] ">
         <div className="md:w-2/5">
           <h2 className="text-2xl pt-9 font-bold text-black">Expert Article</h2>
           <p className="text-gray-800 mt-2">
             Gary Ames and Joe Cautilli co-authored an article discussing how
             neurofeedback aligns with ABA principles. Read the article:{" "}
-            <a href="https://n1536252.websitebuilder.online/wp-content/uploads/go-x/u/a2df9afe-4204-43ab-ade9-fe8c97109f59/Neurofeedback-is-a-form-of-Applied-Behavior-Analysis.pdf"      className="text-[#CF337A] hover:text-gray-900">
-              “Neurofeedback is a Form of Applied Behavior Analysis” 
+            <a href="https://n1536252.websitebuilder.online/wp-content/uploads/go-x/u/a2df9afe-4204-43ab-ade9-fe8c97109f59/Neurofeedback-is-a-form-of-Applied-Behavior-Analysis.pdf"      className="text-[#CF337A] py-2 z-[999] hover:text-gray-900">
+              “Neurofeedback is a Form of Applied Behavior Analysis”  (PDF)
             </a>
-             <a href="https://n1536252.websitebuilder.online/wp-content/uploads/go-x/u/a2df9afe-4204-43ab-ade9-fe8c97109f59/Neurofeedback-is-a-form-of-Applied-Behavior-Analysis.pdf"      className="text-[#CF337A] hover:text-gray-900">
-              (PDF)
-              </a> 
+           
           </p>
           {/* <a href='https://demodesignz.com/projects/grey/wp-content/uploads/2025/01/ABAI_Presentation_GA-1.pdf' className="text-red-600 font-bold py-9 " target="_blank">View the poster presentation here</a> */}
         </div>
