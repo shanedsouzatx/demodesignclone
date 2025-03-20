@@ -21,7 +21,8 @@ export default function Hero() {
           We have positions in South Philadelphia, as well as throughout Montgomery, Bucks, and Delaware counties. We are an Equal Opportunity Employer.
         </p>
         <p className="mt-4">
-          We will review your qualifications when you send us your information. 
+          We will review your qualifications when you send us your information.  <br />
+          
           <Link href="/job-application" className="text-blue-500 text-lg underline underline-offset-4"> We are hiring now!</Link>
         </p>
       </div>
