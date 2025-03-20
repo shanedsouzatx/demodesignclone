@@ -28,9 +28,17 @@ const Hiring: React.FC = () => {
           <h4 className="py-4 text-lg text-gray-700 font-semibold">
             Key Responsibilities
           </h4>
-          <div className="mt-1 list-disc list-inside  text-gray-600 text-left px-5"  style={{ lineHeight: '1.8' }} >
-            <p>Conduct comprehensive multi-systemic assessments. Develop and implement individualized treatment plans.  Provide individual, group, and family therapy sessions.  Ensure BHT team is effectively implementing treatment plans.</p>
-           
+          <div className="mt-1 list-disc list-inside  text-gray-600 text-left px-5"  style={{ lineHeight: '2.1' }} >
+            <p>Conduct comprehensive multi-systemic assessments.    </p>
+           <p>
+           Develop and implement individualized treatment plans.
+           </p>
+           <p>
+           Provide individual, group, and family therapy sessions.
+           </p>
+           <p>
+           Ensure BHT team is effectively implementing treatment plans.
+           </p>
           </div>
         </div>
 

@@ -22,7 +22,7 @@ const Biofeedback: React.FC = () => {
             not offer neurofeedback due to insurance.
           </p>
         </div>
-        <div className="md:w-1/3 mt-6 lg:-mt-16 md: pr-16 ">
+        <div className="md:w-1/3 mt-6 lg:-mt-16 md:pr-16 ">
           <Image
             src="/images/bio1.jpg"
             alt="Kids playing outside"
@@ -85,19 +85,19 @@ const Biofeedback: React.FC = () => {
             improved self-regulation.
           </p>
         </div>
-        <div className="md:w-1/3 mt-36 pr-16 ">
+        <div className="md:w-1/3 mt-32 sm:mt-36 sm:pr-16 ">
           <Image
             src="/images/bio3.jpg"
             alt="Kids playing outside"
             width={350}
             height={290}
-            className="pb-7"
+            className="pb-7 pl-2"
           />
         </div>
       </div>
 
       {/* 4th Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 pt-28 -mb-8 sm:pt-0 md:mt-11 lg-110:mt-[-250px] lg-125:-mt-[175px] xl:-mt-[295px] ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 px-2 pt-28 -mb-8 sm:pt-0 md:mt-11 lg-110:mt-[-250px] lg-125:-mt-[175px] xl:-mt-[295px] ">
         <div className="md:w-2/5">
           <h2 className="text-2xl pt-9 font-bold text-black">Expert Article</h2>
           <p className="text-gray-800 mt-2">
