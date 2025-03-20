@@ -17,7 +17,7 @@ const locations = [
   },
   {
     city: "South Philadelphia Office",
-    address: "2134 S. 10th St. Philadelphia, PA 19148  ",
+    address: "2134 S. 10th St. Philadelphia, \n PA 19148  ",
     number: "267-507-2719",
     fax: "267-507-2720",
   },
@@ -41,7 +41,7 @@ const Locatiion1 = () => {
         </div>
             <h3 className="text-[21px] font-bold">{location.city}</h3>
             <span className="text-gray-700 text-center">Address : </span>
-            <p className="text-gray-700 ">{location.address}</p>
+            <p className="text-gray-700 whitespace-pre-line">{location.address}</p>
             {location.number && (
               <p className="text-gray-800 ">
                 Phone: <span className="">{location.number}</span>

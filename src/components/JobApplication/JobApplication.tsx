@@ -182,8 +182,7 @@ const JobApplication: React.FC = () => {
             />
             <p className="text-sm text-gray-700">
             
-Data will be stored and processed for the purpose of establishing contact. You may revoke my consent to store at any time.
-
+            Data will be stored and processed for the purpose of establishing contact. You may revoke your consent to store your information at any time.
             </p>
           </div>
           <button type="submit" className="bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 transition">

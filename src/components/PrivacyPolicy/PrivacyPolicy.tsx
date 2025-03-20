@@ -35,7 +35,7 @@ const PrivacyPolicy: React.FC = () => {
       <li> your lawful basis and your legitimate interests where relevant;</li>
       <li> who you share people’s information with; and</li>
        */}
-       <li>Data will be stored and processed for the purpose of establishing contact. You may revoke my consent to store at any time.</li>
+       <li>Data will be stored and processed for the purpose of establishing contact. You may revoke your consent to store your information at any time.</li>
       {/* <li> how long you hold people’s information for before
         <Link href="https://ico.org.uk/for-organisations/advice-for-small-organisations/whats-new/blogs/practical-methods-for-destroying-documents-that-are-no-longer-needed/" className="text-blue-500 hover:text-gray-600"> getting rid of it securely.</Link></li> */}
       </ul>

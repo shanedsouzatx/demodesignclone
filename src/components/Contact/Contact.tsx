@@ -193,7 +193,7 @@ const Contact: React.FC = () => {
         <input type="checkbox" name="consent" checked={formData.consent} onChange={handleChange} className="mt-1" required />
         <p className="text-sm text-gray-700">
         
-Data will be stored and processed for the purpose of establishing contact. You may revoke my consent to store at any time.
+        Data will be stored and processed for the purpose of establishing contact. You may revoke your consent to store your information at any time.
 
         </p>
       </div>
