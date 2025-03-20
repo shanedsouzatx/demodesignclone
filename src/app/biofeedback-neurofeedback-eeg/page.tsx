@@ -34,7 +34,7 @@ const Biofeedback: React.FC = () => {
       </div>
 
       {/* Second Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 xl:-mt-11 lg-110:mt-[-10px] lg-125:mt-[45px] ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 xl:-mt-5 lg-110:mt-[-10px] lg-125:mt-[45px] ">
         <div className="md:w-2/5">
           <h2 className="text-2xl pt-5 font-bold text-black">
             ABAI Poster Presentation
@@ -70,7 +70,7 @@ const Biofeedback: React.FC = () => {
         </div>
       </div>
       {/* 3rd Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 lg-110:mt-[-100px]  lg-125:-mt-[32px] xl:-mt-28 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 lg-110:mt-[-100px]  lg-125:-mt-[32px] xl:-mt-[90px] ">
         <div className="md:w-2/5 -mb-20 ">
           <h2 className="text-2xl pt-5 font-bold text-black">
             Understanding Biofeedback
@@ -123,7 +123,7 @@ const Biofeedback: React.FC = () => {
         </div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[10px] lg-110:mt-[-550px] lg-125:-mt-[500px] xl:-mt-[540px] pt-1 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[10px] lg-110:mt-[-550px] lg-125:-mt-[500px] xl:-mt-[537px] pt-1 ">
         <div className="md:w-2/5">
           <h2 className="text-3xl pt-9 font-bold text-black">
             Program Proposal
@@ -156,7 +156,7 @@ const Biofeedback: React.FC = () => {
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-[50px] lg-110:mt-[-100px] lg-125:mt-[-57px] xl:-mt-[110px] py-3">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-[50px] lg-110:mt-[-100px] lg-125:mt-[-57px] xl:-mt-[93px] py-3">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl font-bold pt-5 text-black">
             BrainPaint System Benefits

@@ -22,7 +22,7 @@ export default function Hero() {
         </p>
         <p className="mt-4">
           We will review your qualifications when you send us your information. 
-          <Link href="/job-application" className="text-blue-500 text-lg underline underline-offset-4">We are hiring now!</Link>
+          <Link href="/job-application" className="text-blue-500 text-lg underline underline-offset-4"> We are hiring now!</Link>
         </p>
       </div>
     </div>
