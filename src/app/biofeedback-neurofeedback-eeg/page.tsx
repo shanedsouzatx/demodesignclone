@@ -46,7 +46,7 @@ const Biofeedback: React.FC = () => {
           </p>
           <a
             href="https://demodesignz.com/projects/grey/wp-content/uploads/2025/01/ABAI_Presentation_GA-1.pdf"
-            className="text-[#CF337A]  mt-5 mb-4 "
+            className="text-[#CF337A]  mt-5 mb-4 hover:text-gray-800 "
           >
             View the poster presentation here
           </a>
@@ -97,13 +97,13 @@ const Biofeedback: React.FC = () => {
       </div>
 
       {/* 4th Section */}
-      <div className="flex flex-col md:flex-row justify-between z-[999] items-start gap-9 px-2 pt-28 -mb-8 sm:pt-0 md:mt-11 lg-110:mt-[-250px] lg-125:-mt-[175px] xl:-mt-[295px] ">
+      <div className="flex flex-col md:flex-row justify-between z-[999] items-start gap-9 pt-28 -mb-8 sm:pt-0 md:mt-11 lg-110:mt-[-239px] lg-125:-mt-[175px] xl:-mt-[295px] ">
         <div className="md:w-2/5">
           <h2 className="text-2xl pt-9 font-bold text-black">Expert Article</h2>
-          <p className="text-gray-800 mt-2">
+          <p className="text-gray-800 mt-2 mb-2">
             Gary Ames and Joe Cautilli co-authored an article discussing how
             neurofeedback aligns with ABA principles. Read the article:{" "}
-            <a href="https://n1536252.websitebuilder.online/wp-content/uploads/go-x/u/a2df9afe-4204-43ab-ade9-fe8c97109f59/Neurofeedback-is-a-form-of-Applied-Behavior-Analysis.pdf"      className="text-[#CF337A] py-2 z-[999] hover:text-gray-900">
+            <a href="https://n1536252.websitebuilder.online/wp-content/uploads/go-x/u/a2df9afe-4204-43ab-ade9-fe8c97109f59/Neurofeedback-is-a-form-of-Applied-Behavior-Analysis.pdf"      className="text-[#CF337A] py-5 z-[999] hover:text-gray-900">
               “Neurofeedback is a Form of Applied Behavior Analysis”  (PDF)
             </a>
            
@@ -121,7 +121,7 @@ const Biofeedback: React.FC = () => {
         </div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[46px] lg-110:mt-[-550px] lg-125:-mt-[500px] xl:-mt-[525px] pt-0 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[46px] lg-110:mt-[-537px] lg-125:-mt-[500px] xl:-mt-[525px] pt-0 ">
         <div className="md:w-2/5">
           <h2 className="text-3xl pt-9 font-bold text-black">
             Program Proposal
