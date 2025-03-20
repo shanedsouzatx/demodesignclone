@@ -2,7 +2,7 @@
 import Link from "next/link";
 const Biofeedback: React.FC = () => {
   return (
-    <div className="max-w-8xl mx-auto overflow-x-auto pt-[210px] lg:pt-[240px] p-6 px-11 ">
+    <div className="max-w-8xl mx-auto overflow-x-auto pt-[210px] lg:pt-[240px] p-6 px-11  ">
       {/* Page Heading */}
       <h1 className="text-3xl md:text-4xl font-bold text-green-700 mb-6">
         Neurofeedback Program Overview
@@ -34,7 +34,7 @@ const Biofeedback: React.FC = () => {
       </div>
 
       {/* Second Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 xl:-mt-11 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 xl:-mt-11 lg-110:mt-[-10px] lg-125:mt-[45px] ">
         <div className="md:w-2/5">
           <h2 className="text-2xl pt-5 font-bold text-black">
             ABAI Poster Presentation
@@ -70,7 +70,7 @@ const Biofeedback: React.FC = () => {
         </div>
       </div>
       {/* 3rd Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9  xl:-mt-28 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 lg-110:mt-[-100px]  lg-125:-mt-[32px] xl:-mt-28 ">
         <div className="md:w-2/5 -mb-20 ">
           <h2 className="text-2xl pt-5 font-bold text-black">
             Understanding Biofeedback
@@ -97,7 +97,7 @@ const Biofeedback: React.FC = () => {
       </div>
 
       {/* 4th Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 lg:-mt-32 xl:-mt-72 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 lg-110:mt-[-250px] lg-125:-mt-[175px] xl:-mt-[295px] ">
         <div className="md:w-2/5">
           <h2 className="text-2xl pt-9 font-bold text-black">Expert Article</h2>
           <p className="text-gray-800 mt-2">
@@ -123,12 +123,12 @@ const Biofeedback: React.FC = () => {
         </div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[10px] lg:-mt-[530px] pt-3">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[10px] lg-110:mt-[-550px] lg-125:-mt-[500px] xl:-mt-[540px] pt-1 ">
         <div className="md:w-2/5">
           <h2 className="text-3xl pt-9 font-bold text-black">
             Program Proposal
           </h2>
-          <p className="text-gray-800 mt-2">
+          <p className="text-gray-800 mt-3 ">
             Gary also wrote a proposal to CBH outlining an ideal funded project
             for the neurofeedback program. This proposal discusses
           </p>
@@ -136,17 +136,18 @@ const Biofeedback: React.FC = () => {
         <div className="md:w-1/3 md:mt-72 "></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[76px] md:-mt-36 lg:-mt-48 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[16px] md:-mt-36 lg-110:mt-[-150px] lg-125:mt-[-122px] xl:-mt-[333px ] ">
         <div className="md:w-2/5 py-4">
-          <h2 className="text-3xl pt-5 font-bold text-black">
+          <h2 className="text-3xl pt-1 font-bold text-black">
             Previous Program Outcomes
           </h2>
-          <p className="text-gray-800 py-3">
-            <span className="text-black font-bold">Increased : </span>Attention,  
+          <p className="text-gray-800 py-4">
+            <span className="text-black font-bold pb-3 ">Increased : </span>Attention,  
             sleep quality, attendance, relaxation, memory, grades, social
             skills, and tolerance.
             <br />
-            <span className="text-black font-bold">Decreased : </span> Stress,
+            <br />
+            <span className="text-black font-bold pt-3 ">Decreased : </span> Stress,
             impulsivity, disruptive behavior, violence, outbursts, suspensions,
             negativity, tardiness, learning disabilities, and medication
             reliance.{" "}
@@ -155,7 +156,7 @@ const Biofeedback: React.FC = () => {
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-[50px] lg:-mt-[90px] xl:-mt-[110px] ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-[50px] lg-110:mt-[-100px] lg-125:mt-[-57px] xl:-mt-[110px] py-3">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl font-bold pt-5 text-black">
             BrainPaint System Benefits
@@ -165,12 +166,12 @@ const Biofeedback: React.FC = () => {
             including low cost, ease of use, AI technology, and strong research
             support.
             <br />
-<span className="pt-3 mt-4 py-6">
+<span className="pt-3 mt-4 py-6 z-[999] ">
 View the proposal: 
 </span>
             <a
               href="https://n1536252.websitebuilder.online/wp-content/uploads/go-x/u/0624b328-33fd-4d2b-a99c-df74c56d4cae/Neurofeedback-in-Schools.pdf"
-              className="text-[#CF337A] hover:text-gray-900"
+              className="text-[#CF337A] hover:text-gray-900 z-[999] py-3"
             >
               “Neurofeedback in Schools Program” (PDF)
             </a>
@@ -179,7 +180,7 @@ View the proposal:
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-16 lg:-mt-36 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-16 lg-110:mt-[-150px] lg-125:mt-[-130px] xl:-mt-[170px] py-5 ">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl pt-5 font-bold text-black">
             Program Outcomes
@@ -189,8 +190,9 @@ View the proposal:
             training sessions, and the findings are promising. See the results:
             <a
               href="https://demodesignz.com/projects/grey/wp-content/uploads/2025/01/Neurofeedback_Training_Outcomes_in_Children.pdf"
-              className="text-[#CF337A] "
-            >
+              className="text-[#CF337A] hover:text-gray-800 "
+           
+           >
               {" "}
               “Neurofeedback Training Outcomes in Children” (PDF)
             </a>{" "}
@@ -199,7 +201,7 @@ View the proposal:
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9  -mt-[86px] md:-mt-16 lg:-mt-36 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9  -mt-[86px] md:-mt-16 lg:-mt-[140px] xl:-mt-[162px]  ">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl pt-5 font-bold text-black">Conclusion</h2>
           <p className="text-gray-800 mt-2 pb-2">

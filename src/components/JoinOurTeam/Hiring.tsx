@@ -19,7 +19,7 @@ const Hiring: React.FC = () => {
             Behavior Consultant (BC)
           </h2>
           <h3 className="py-5 text-lg text-gray-700  font-semibold">Job Description</h3>
-          <p className="mt-1 line-height-5 text-gray-600 " style={{ lineHeight: '1.7' }}>
+          <p className="mt-1 line-height-5 text-gray-600 text-left px-5 " style={{ lineHeight: '1.9' }}>
             The Behavior Consultant (BC) provides comprehensive behavioral
             health services, working closely with clients to assess needs and
             develop individualized treatment plans. Supervision provided at no
@@ -28,20 +28,14 @@ const Hiring: React.FC = () => {
           <h4 className="py-4 text-lg text-gray-700 font-semibold">
             Key Responsibilities
           </h4>
-          <div className="mt-1 list-disc list-inside  text-gray-600"   >
-            <p>Conduct comprehensive multi-systemic assessments.</p>
-            <p className="py-5">Develop and implement individualized treatment plans.</p>
-            <p>
-                Provide individual, group, and family therapy sessions.
-            </p>
-            <p  className="py-5">
-              Ensure BHT team is effectively implementing treatment plans.
-            </p>
+          <div className="mt-1 list-disc list-inside  text-gray-600 text-left px-5"  style={{ lineHeight: '1.8' }} >
+            <p>Conduct comprehensive multi-systemic assessments. Develop and implement individualized treatment plans.  Provide individual, group, and family therapy sessions.  Ensure BHT team is effectively implementing treatment plans.</p>
+           
           </div>
         </div>
 
         {/* Job 2 */}
-        <div className="job w-full md:w-[600px] p-4 flex flex-col">
+        <div className="job w-full md:w-[600px] p-3 flex flex-col">
           <Image
             src="/images/join3.webp"
             alt="Mobile Therapist (MT)"
@@ -51,12 +45,12 @@ const Hiring: React.FC = () => {
           />
           <h2 className="mt-4 text-2xl text-blue-500 font-bold  pt-4">Mobile Therapist (MT)</h2>
           <h3 className="mt-2 text-lg text-gray-700 font-semibold">Job Description</h3>
-          <p className="mt-1 text-gray-600" style={{ lineHeight: '2.2' }}>
+          <p className="mt-1 text-gray-600 text-left px-6" style={{ lineHeight: '1.8' }}>
           The Mobile Therapist (MT) provides Intensive Behavioral Health Services (IBHS) to children, youth, and young adults in their homes, schools, or communities. As part of a collaborative team with Behavior Consultants (BCs) and Behavioral Health Technicians (BHTs), the MT develops and implements individualized treatment plans. 
 
           </p>
           <h4 className="mt-3 text-lg text-gray-700 font-semibold">Responsibilities</h4>
-          <p className="mt-1 text-gray-600">
+          <p className="mt-1 text-gray-600 text-left px-5">
           Conduct comprehensive assessments and develop treatment plans.  
 
           </p>
@@ -74,21 +68,13 @@ const Hiring: React.FC = () => {
           <h2 className="mt-4 text-2xl text-blue-500 font-bold">Behavioral Health Technician (BHT)
           </h2>
           <h3 className="mt-2 text-lg text-gray-700 font-semibold">Job Description</h3>
-          <p className="mt-1 text-gray-600" style={{ lineHeight: '-1' }}>
+          <p className="mt-1 text-gray-600 text-left px-5 " style={{ lineHeight: '-1' }}>
           The Behavioral Health Technician (BHT) implements behavioral health services under the close supervision of a Behavior Consultant (BC). The BHT works one-on-one or in group settings with clients aged 5-21, their families, and other involved professionals. Paid training provided to employees. 
 
           </p>
           <h4 className="mt-3 text-lg text-gray-700   font-semibold">Responsibilities</h4>
-          <p className="mt-1 text-gray-600">
-          Implement evidence-based strategies from the treatment plan. 
-
-          </p> <p className="mt-1 text-gray-600">
-          Keep the child engaged and motivated. 
-
-
-          </p> <p className="mt-1 text-gray-600">
-          Create a therapeutic environment. 
-           
+          <p className="mt-1 text-gray-600 text-left px-5">
+          Implement evidence-based strategies from the treatment plan.  Keep the child engaged and motivated. Create a therapeutic environment. 
 
           </p>
         </div>

@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+      'lg-110': { raw: '(max-width: 1300px)' }, // Adjust for 110% zoom
+      'lg-125': { raw: '(max-width: 1200px)' }, // Adjust for 125% zoom
+    },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

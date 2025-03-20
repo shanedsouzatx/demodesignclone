@@ -12,8 +12,9 @@ const Contact: React.FC = () => {
     phone: "",
     message: "",
     consent: false,
-    location: "", // for radio button selection
-    // files will be added in the future if needed
+    location: "",
+    job: "",  // Add job selection
+    attachments: [] as File[]  // Add attachments
   });
 
   const locations = [
@@ -45,25 +46,84 @@ const Contact: React.FC = () => {
   //   });
   // };
 
+  // Add file handling
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      setFormData({
+        ...formData,
+        attachments: Array.from(e.target.files)
+      });
+    }
+  };
+  
+  // Update handleSubmit
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.location) {
-      alert("Please select a location.");
+    
+    if (!formData.location || !formData.job) {
+      alert("Please select both a location and job type.");
       return;
     }
 
-    const res = await fetch("/api/send-emails", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
+    const formDataToSend = new FormData();
+    Object.entries(formData).forEach(([key, value]) => {
+      if (key !== 'attachments') {
+        formDataToSend.append(key, value.toString());
+      }
     });
-
-    if (res.ok) {
-      alert("Email sent successfully!");
-    } else {
-      alert("Error sending email.");
+    
+    formData.attachments.forEach((file) => {
+      formDataToSend.append('attachments', file);
+    });
+  
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        body: formDataToSend,
+      });
+  
+      if (res.ok) {
+        alert("Form submitted successfully!");
+        // Reset form
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+          consent: false,
+          location: "",
+          job: "",
+          attachments: []
+        });
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      alert("Error submitting form. Please try again.");
+      console.error(error);
     }
   };
+
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   if (!formData.location) {
+  //     alert("Please select a location.");
+  //     return;
+  //   }
+
+  //   const res = await fetch("/api/send-emails", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(formData),
+  //   });
+
+  //   if (res.ok) {
+  //     alert("Email sent successfully!");
+  //   } else {
+  //     alert("Error sending email.");
+  //   }
+  // };
 
   return (
     <div className="max-w-[1600px] mx-auto px-4 md:px-10 pt-24 py-16 grid grid-cols-1 md:grid-cols-7 gap-12">

@@ -136,8 +136,10 @@ const JobApplication: React.FC = () => {
           >
             <option value="">Select Job Role</option>
             <option value="Behavior Consultant (BC)">Behavior Consultant (BC)</option>
-            <option value="Behavior Technician (BT)">Behavior Technician (BT)</option>
+            <option value="Mobile Therapist (MT)">Mobile Therapist (MT)</option>
             <option value="Registered Behavior Technician (RBT)">Registered Behavior Technician (RBT)</option>
+            <option value="Behavior Technician (BT)">Behavior Technician (BT)</option>
+            <option value="Administration">Administration</option>
           </select>
           {/* Location Selection */}
           <div className="flex flex-col space-y-2">
