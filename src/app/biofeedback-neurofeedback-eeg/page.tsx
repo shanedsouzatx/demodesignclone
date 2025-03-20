@@ -121,7 +121,7 @@ const Biofeedback: React.FC = () => {
         </div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[46px] lg-110:mt-[-537px] lg-125:-mt-[500px] xl:-mt-[525px] pt-0 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[46px] lg-110:mt-[-527px] lg-125:-mt-[480px] xl:-mt-[525px] pt-0 ">
         <div className="md:w-2/5">
           <h2 className="text-3xl pt-9 font-bold text-black">
             Program Proposal
@@ -134,18 +134,17 @@ const Biofeedback: React.FC = () => {
         <div className="md:w-1/3 md:mt-72 "></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 pt-[416px] sm:pt-0 mt- md:-mt-36 lg-110:mt-[-150px] lg-125:mt-[-122px] xl:-mt-[313px ] ">
-        <div className="md:w-2/5 py-6">
-          <h2 className="text-3xl pt-1 font-bold text-black">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 pt-[416px] sm:pt-0 mt- md:-mt-36 lg-110:mt-[-165px] lg-125:mt-[-137px] xl:-mt-[173px] ">
+        <div className="md:w-2/5 py-4">
+          <h2 className="text-3xl pt-1 pb-2 font-bold text-black">
             Previous Program Outcomes
           </h2>
-          <p className="text-gray-800 py-4">
-            <span className="text-black font-bold pb-3 ">Increased : </span>Attention,  
+          <p className="text-gray-800  ">
+            <span className="text-black font-bold -mb-4 ">Increased : </span>Attention,  
             sleep quality, attendance, relaxation, memory, grades, social
             skills, and tolerance.
             <br />
-            <br />
-            <span className="text-black font-bold pt-3 ">Decreased : </span> Stress,
+            <span className="text-black font-bold -mt-4 ">Decreased : </span> Stress,
             impulsivity, disruptive behavior, violence, outbursts, suspensions,
             negativity, tardiness, learning disabilities, and medication
             reliance.{" "}
@@ -154,7 +153,7 @@ const Biofeedback: React.FC = () => {
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-[50px] lg-110:mt-[-100px] lg-125:mt-[-57px] xl:-mt-[93px] py-3">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-[50px] lg-110:mt-[-111px] lg-125:mt-[-77px] xl:-mt-[111px] py-3">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl font-bold pt-5 text-black">
             BrainPaint System Benefits
@@ -178,7 +177,7 @@ View the proposal:
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-16 lg-110:mt-[-150px] lg-125:mt-[-130px] xl:-mt-[170px] py-5 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-16 lg-110:mt-[-175px] lg-125:mt-[-144px] xl:-mt-[199px] py-5 ">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl pt-5 font-bold text-black">
             Program Outcomes
@@ -199,7 +198,7 @@ View the proposal:
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9  -mt-[86px] md:-mt-16 lg:-mt-[120px] xl:-mt-[152px]  ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9  -mt-[86px] md:-mt-16 lg:-mt-[120px] xl:-mt-[162px]  ">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl pt-5 font-bold text-black">Conclusion</h2>
           <p className="text-gray-800 mt-2 pb-2">
