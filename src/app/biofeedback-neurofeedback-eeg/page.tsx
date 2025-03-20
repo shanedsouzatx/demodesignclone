@@ -28,13 +28,13 @@ const Biofeedback: React.FC = () => {
             alt="Kids playing outside"
             width={350}
             height={290}
-            className="pb-7"
+            className="sm:pb-7"
           />
         </div>
       </div>
 
       {/* Second Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 xl:-mt-5 lg-110:mt-[-10px] lg-125:mt-[45px] ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-16 md:mt-11 xl:-mt-5 lg-110:mt-[-10px] lg-125:mt-[45px] ">
         <div className="md:w-2/5">
           <h2 className="text-2xl pt-5 font-bold text-black">
             ABAI Poster Presentation
@@ -97,7 +97,7 @@ const Biofeedback: React.FC = () => {
       </div>
 
       {/* 4th Section */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:mt-11 lg-110:mt-[-250px] lg-125:-mt-[175px] xl:-mt-[295px] ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 pt-28 -mb-8 sm:pt-0 md:mt-11 lg-110:mt-[-250px] lg-125:-mt-[175px] xl:-mt-[295px] ">
         <div className="md:w-2/5">
           <h2 className="text-2xl pt-9 font-bold text-black">Expert Article</h2>
           <p className="text-gray-800 mt-2">
@@ -118,12 +118,12 @@ const Biofeedback: React.FC = () => {
             alt="Baby sitting on a bench"
             width={350}
             height={250}
-            className="pb-7"
+            className="sm:pb-7 pt-11 mt-11 sm:mt-0 sm:p-0"
           />
         </div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[10px] lg-110:mt-[-550px] lg-125:-mt-[500px] xl:-mt-[537px] pt-1 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[46px] lg-110:mt-[-550px] lg-125:-mt-[500px] xl:-mt-[525px] pt-0 ">
         <div className="md:w-2/5">
           <h2 className="text-3xl pt-9 font-bold text-black">
             Program Proposal
@@ -136,8 +136,8 @@ const Biofeedback: React.FC = () => {
         <div className="md:w-1/3 md:mt-72 "></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[16px] md:-mt-36 lg-110:mt-[-150px] lg-125:mt-[-122px] xl:-mt-[333px ] ">
-        <div className="md:w-2/5 py-4">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 pt-[416px] sm:pt-0 mt- md:-mt-36 lg-110:mt-[-150px] lg-125:mt-[-122px] xl:-mt-[313px ] ">
+        <div className="md:w-2/5 py-6">
           <h2 className="text-3xl pt-1 font-bold text-black">
             Previous Program Outcomes
           </h2>
@@ -201,7 +201,7 @@ View the proposal:
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9  -mt-[86px] md:-mt-16 lg:-mt-[140px] xl:-mt-[162px]  ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9  -mt-[86px] md:-mt-16 lg:-mt-[120px] xl:-mt-[152px]  ">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl pt-5 font-bold text-black">Conclusion</h2>
           <p className="text-gray-800 mt-2 pb-2">
