@@ -132,7 +132,7 @@ const Biofeedback: React.FC = () => {
           />
         </div>
         <div className="md:w-2/5">
-          <h2 className="text-3xl -mt-20 sm:-mt-0 sm:pt-9 font-bold text-black">
+          <h2 className="text-3xl -mt-[20px] sm:-mt-0 sm:pt-9 font-bold text-black">
             Program Proposal
           </h2>
           <p className="text-gray-800 mt-3 ">
@@ -209,7 +209,7 @@ View the proposal:
       {/* NEXT */}
       <div className="flex flex-col md:flex-row justify-between items-start gap-9  -mt-[86px] md:-mt-16 lg:-mt-[120px] xl:-mt-[162px]  ">
         <div className="md:w-2/5 py-5">
-          <h2 className="text-3xl pt-5 font-bold text-black">Conclusion</h2>
+          <h2 className="text-3xl pt-7 sm:pt-5 font-bold text-black">Conclusion</h2>
           <p className="text-gray-800 mt-2 pb-2">
             The findings from our neurofeedback training program confirms that
             this intervention is broadly effective, yielding significant durable
