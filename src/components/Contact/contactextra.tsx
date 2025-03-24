@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
     });
   
     try {
-      const res = await fetch("/api/send-emails2", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         body: formDataToSend,
       });

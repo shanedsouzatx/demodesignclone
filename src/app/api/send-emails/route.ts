@@ -1,65 +1,53 @@
 import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import nodemailer from 'nodemailer';
+import { getRecipientEmail } from '@/components/Contact/emailMapping';
 
-export async function POST(request: NextRequest) {
+export async function POST(request: Request) {
   try {
-    const body = await request.json();
-    const { firstName, lastName, email, phone, message, location } = body;
-
-    // For now, just return success without actually sending email
-    return NextResponse.json(
-      { success: true, message: 'Form submission received' },
-      { status: 200 }
+    const formData = await request.formData();
+    
+    const recipientEmail = getRecipientEmail(
+      formData.get('location') as string,
+      formData.get('job') as string
     );
+
+    // Create email content
+    const emailContent = `
+      New Contact Form Submission
+
+      Name: ${formData.get('firstName')} ${formData.get('lastName')}
+      Email: ${formData.get('email')}
+      Phone: ${formData.get('phone')}
+      Location: ${formData.get('location')}
+      Job Interest: ${formData.get('job')}
+      Message: ${formData.get('message')}
+    `;
+
+    // Configure email transport
+    const transporter = nodemailer.createTransport({
+      host: "smtp.office365.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_APP_PASSWORD,
+      },
+    });
+
+    // Send email
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: recipientEmail,
+      subject: 'New Contact Form Submission',
+      text: emailContent,
+    });
+
+    return NextResponse.json({ success: true });
   } catch (error) {
+    console.error('Error processing contact form:', error);
     return NextResponse.json(
-      { success: false, message: 'Error processing request' },
+      { error: 'Failed to process contact form' },
       { status: 500 }
     );
   }
 }
-
-// import type { NextApiRequest, NextApiResponse } from 'next';
-// import sgMail from '@sendgrid/mail';
-
-// sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
-
-// export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-//   if (req.method === 'POST') {
-//     try {
-//       const { firstName, lastName, email, phone, message, location } = req.body;
-
-//       // Map the selected location to a recipient email
-//       let recipient = '';
-//       switch (location) {
-//         case 'Bala Cynwyd Office':
-//           recipient = 'email1@example.com';
-//           break;
-//         case 'Philadelphia Office':
-//           recipient = 'email2@example.com';
-//           break;
-//         case 'South Philadelphia Satellite Office':
-//           recipient = 'email3@example.com';
-//           break;
-//         default:
-//           recipient = 'email4@example.com';
-//       }
-
-//       const msg = {
-//         to: recipient,
-//         from: process.env.SENDGRID_SENDER as string,
-//         subject: `New Contact Form Submission from ${firstName} ${lastName}`,
-//         text: `Phone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
-//         // If you add file attachments later, process and add them here.
-//       };
-
-//       await sgMail.send(msg);
-//       res.status(200).json({ success: true, message: 'Email sent successfully!' });
-//     } catch (error) {
-//       console.error(error);
-//       res.status(500).json({ success: false, error });
-//     }
-//   } else {
-//     res.status(405).json({ message: 'Method not allowed' });
-//   }
-// }

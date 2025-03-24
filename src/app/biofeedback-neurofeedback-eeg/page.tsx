@@ -99,7 +99,7 @@ const Biofeedback: React.FC = () => {
       {/* 4th Section */}
       <div className="flex flex-col md:flex-row justify-between z-[999] items-start gap-9 pt-28 -mb-8 sm:pt-0 md:mt-11 lg-110:mt-[-239px] lg-125:-mt-[175px] xl:-mt-[295px] ">
         <div className="md:w-2/5">
-          <h2 className="text-2xl pt-9 font-bold text-black">Expert Article</h2>
+          <h2 className="text-2xl pt-11 sm:pt-9 font-bold text-black">Expert Article</h2>
           <p className="text-gray-800 mt-2 mb-2">
             Gary Ames and Joe Cautilli co-authored an article discussing how
             neurofeedback aligns with ABA principles. Read the article:{" "}
@@ -116,25 +116,34 @@ const Biofeedback: React.FC = () => {
             alt="Baby sitting on a bench"
             width={350}
             height={250}
-            className="sm:pb-7 pt-11 mt-11 sm:mt-0 sm:p-0"
+            className="sm:pb-7 pt-11 mt-11 sm:mt-0 sm:p-0 hidden sm:block"
           />
         </div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 -mt-[46px] lg-110:mt-[-527px] lg-125:-mt-[480px] xl:-mt-[525px] pt-0 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 md:-mt-80 mt-[46px] lg-110:mt-[-527px] lg-125:-mt-[480px] xl:-mt-[525px] pt-[700px] sm:pt-0 ">
+      <div className="md:w-1/3 sm:hidden mt-16md:mt-72">
+          <Image
+            src="/images/bio4.png"
+            alt="Baby sitting on a bench"
+            width={350}
+            height={250}
+            className=" sm:hidden  -mt-[260px] "
+          />
+        </div>
         <div className="md:w-2/5">
-          <h2 className="text-3xl pt-9 font-bold text-black">
+          <h2 className="text-3xl -mt-20 sm:-mt-0 sm:pt-9 font-bold text-black">
             Program Proposal
           </h2>
           <p className="text-gray-800 mt-3 ">
             Gary also wrote a proposal to CBH outlining an ideal funded project
             for the neurofeedback program. This proposal discusses
           </p>
-        </div>
+        </div> 
         <div className="md:w-1/3 md:mt-72 "></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 pt-[416px] sm:pt-0 mt- md:-mt-36 lg-110:mt-[-165px] lg-125:mt-[-137px] xl:-mt-[173px] ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 pt-[94px] sm:pt-0 mt- md:-mt-36 lg-110:mt-[-165px] lg-125:mt-[-137px] xl:-mt-[173px] ">
         <div className="md:w-2/5 py-4">
           <h2 className="text-3xl pt-1 pb-2 font-bold text-black">
             Previous Program Outcomes
@@ -153,9 +162,9 @@ const Biofeedback: React.FC = () => {
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-[50px] lg-110:mt-[-111px] lg-125:mt-[-77px] xl:-mt-[111px] py-3">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[43px] md:-mt-[50px] lg-110:mt-[-111px] lg-125:mt-[-77px] xl:-mt-[111px] pt-8 ">
         <div className="md:w-2/5 py-5">
-          <h2 className="text-3xl font-bold pt-5 text-black">
+          <h2 className="text-3xl font-bold pt-8 text-black">
             BrainPaint System Benefits
           </h2>
           <p className="text-gray-800 mt-2 mb-2 ">
@@ -177,7 +186,7 @@ View the proposal:
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-16 lg-110:mt-[-175px] lg-125:mt-[-144px] xl:-mt-[199px] py-5 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-16 lg-110:mt-[-175px] lg-125:mt-[-144px] xl:-mt-[199px] py-5 pt-[50px] ">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl pt-5 font-bold text-black">
             Program Outcomes

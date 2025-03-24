@@ -1,22 +1,15 @@
-type EmailMapping = {
-    [key: string]: {
-      [key: string]: string;
-    };
-  };
-  
-  export const emailMapping: EmailMapping = {
-    "Philadelphia": {
-      "Services": "email1@example.com",
-      "Employment": "email2@example.com",
-      "Something else": "email3@example.com"
-    },
-    "Montgomery, Bucks, or Delaware county": {
-      "Services": "email4@example.com",
-      "Employment": "email5@example.com",
-      "Something else": "email6@example.com"
-    }
-  };
-  
-  export const getRecipientEmail = (location: string, job: string): string => {
-    return emailMapping[location]?.[job] || "default@example.com";
-  };
+export const locationJobEmails = [
+  { location: "Philadelphia", job: "Services", email: "chantellebosier@batp.org" },
+  { location: "Philadelphia", job: "Employment", email: "chantellebosier@batp.org" },
+  { location: "Philadelphia", job: "Something else", email: "chantellebosier@batp.org" },
+  { location: "Montgomery, Bucks, or Delaware county", job: "Services", email: "chantellebosier@batp.org" },
+  { location: "Montgomery, Bucks, or Delaware county", job: "Employment", email: "chantellebosier@batp.org" },
+  { location: "Montgomery, Bucks, or Delaware county", job: "Something else", email: "chantellebosier@batp.org" }
+];
+
+export const getRecipientEmail = (location: string, job: string) => {
+  const mapping = locationJobEmails.find(
+    item => item.location === location && item.job === job
+  );
+  return mapping?.email || "chantellebosier@batp.org";
+};
