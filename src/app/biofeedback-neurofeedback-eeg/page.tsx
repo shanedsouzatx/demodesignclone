@@ -162,9 +162,9 @@ const Biofeedback: React.FC = () => {
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[43px] md:-mt-[50px] lg-110:mt-[-111px] lg-125:mt-[-77px] xl:-mt-[111px] pt-8 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 lg:-mb-16 -mt-[30px] md:-mt-[50px] lg-110:mt-[-111px] lg-125:mt-[-77px] xl:-mt-[111px] pt-2 ">
         <div className="md:w-2/5 py-5">
-          <h2 className="text-3xl font-bold pt-8 text-black">
+          <h2 className="text-3xl font-bold pt-2 text-black">
             BrainPaint System Benefits
           </h2>
           <p className="text-gray-800 mt-2 mb-2 ">
@@ -172,7 +172,7 @@ const Biofeedback: React.FC = () => {
             including low cost, ease of use, AI technology, and strong research
             support.
             <br />
-<span className="pt-3 mt-4 py-6 z-[999] ">
+<span className="pt-3 mt-4 py-9 z-[999] ">
 View the proposal: 
 </span>
             <a
@@ -186,9 +186,9 @@ View the proposal:
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-16 lg-110:mt-[-175px] lg-125:mt-[-144px] xl:-mt-[199px] py-5 pt-[50px] ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 -mt-[86px] md:-mt-16 lg-110:mt-[-175px] lg-125:mt-[-144px] xl:-mt-[199px] py-5 pt-[50px] z-[-999] sm:pt-[40px] ">
         <div className="md:w-2/5 py-5">
-          <h2 className="text-3xl pt-5 font-bold text-black">
+          <h2 className="text-3xl pt-5 sm:pt-2 font-bold text-black">
             Program Outcomes
           </h2>
           <p className="text-gray-800 mt-2 ">
