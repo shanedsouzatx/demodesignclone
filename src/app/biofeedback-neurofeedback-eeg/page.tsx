@@ -162,7 +162,7 @@ const Biofeedback: React.FC = () => {
         <div className="md:w-1/3 md:mt-72"></div>
       </div>
       {/* NEXT */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-9 lg:-mb-16 -mt-[30px] md:-mt-[50px] lg-110:mt-[-111px] lg-125:mt-[-77px] xl:-mt-[111px] pt-2 ">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-9 lg:-mb-16 -mt-[25px] md:-mt-[50px] lg-110:mt-[-111px] lg-125:mt-[-77px] xl:-mt-[111px] pt-9 sm:pt-0 ">
         <div className="md:w-2/5 py-5">
           <h2 className="text-3xl font-bold pt-2 text-black">
             BrainPaint System Benefits
