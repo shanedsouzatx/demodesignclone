@@ -173,13 +173,13 @@ const Biofeedback: React.FC = () => {
             support.
             <br />
 <span className="pt-3 mt-4 py-9 z-[999] ">
-View the proposal: 
+View the proposal: &nbsp; 
 </span>
             <a
               href="https://n1536252.websitebuilder.online/wp-content/uploads/go-x/u/0624b328-33fd-4d2b-a99c-df74c56d4cae/Neurofeedback-in-Schools.pdf"
-              className="text-[#CF337A] hover:text-gray-900 z-[999] py-3"
+              className="text-[#CF337A] hover:text-gray-900 z-[999] py-6 "
             >
-              “Neurofeedback in Schools Program” (PDF)
+               “Neurofeedback in Schools Program” (PDF)
             </a>
           </p>
         </div>
