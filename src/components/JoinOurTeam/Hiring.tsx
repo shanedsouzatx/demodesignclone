@@ -62,6 +62,10 @@ const Hiring: React.FC = () => {
           Conduct comprehensive assessments and develop treatment plans.  
 
           </p>
+          <p className="mt-1 text-gray-600 text-left px-5">
+          Provide individual, group and family therapy sessions  
+
+          </p>
         </div>
 
         {/* Job 3 */}
