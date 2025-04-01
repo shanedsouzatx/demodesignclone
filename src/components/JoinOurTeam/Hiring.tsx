@@ -34,7 +34,7 @@ const Hiring: React.FC = () => {
            Develop and implement individualized treatment plans.
            </p>
            <p>
-           Provide individual, group, and family therapy sessions.
+           provides behavioral consultation and training to parents and teachers around child behaviors and skill development.
            </p>
            <p>
            Ensure BHT team is effectively implementing treatment plans.

@@ -160,7 +160,7 @@ const JobApplication: React.FC = () => {
           {/* File Upload Section for CV */}
           <div>
             <label htmlFor="cvFile" className="block text-sm font-semibold mb-1">
-              Upload CV:
+              Upload Resume:
             </label>
             <input
               type="file"
